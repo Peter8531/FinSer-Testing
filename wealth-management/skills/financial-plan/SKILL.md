@@ -118,6 +118,26 @@ Model Centrelink Age Pension eligibility (age 67):
 - **Private health insurance**: Review for Medicare Levy Surcharge avoidance (1-1.5% for singles >$93,000, families >$186,000 without appropriate cover)
 - **Aged care planning**: Refundable Accommodation Deposit (RAD) vs Daily Accommodation Payment (DAP), means-tested care fees, impact on Age Pension
 
+### Step 5B: Debt Recycling Assessment
+
+If the client has a home mortgage and surplus cash flow, assess debt recycling — converting non-deductible home loan debt into tax-deductible investment debt. Load the `debt-recycling` skill for the full workflow. Key assessment:
+
+- **Suitability**: Stable income, 7+ year horizon, comfortable with leverage, emergency fund in place
+- **Structure**: Home loan must be split — non-deductible (Split A) and deductible investment (Split B). Funds must flow directly from Split B to investments
+- **Investment selection**: Income-producing Australian equity ETFs (VAS, IOZ) for franking credits + international (VGS) for diversification
+- **Annual process**: Extra repayment → redraw into investment split → invest → dividends pay down home loan → claim interest deductions → repeat
+- **Tax benefit**: Interest on Split B is deductible at marginal rate. Fully franked dividends are nearly tax-free at rates up to 32%. Net carry cost is minimal
+- **Exit at retirement**: Sell investments (CGT discount if held >12 months), clear deductible debt, contribute surplus to super if cap space allows
+
+| Year | Non-Deductible Debt | Deductible Debt | Total Debt | Investment Portfolio | Tax Saving (cumulative) |
+|------|--------------------|-----------------|-----------|--------------------|------------------------|
+| 0 | [Mortgage balance] | $0 | | $0 | $0 |
+| 5 | | | | | |
+| 10 | | | | | |
+| Retirement | | | | | |
+
+**Key milestone**: Identify the year when non-deductible debt reaches $0 — all remaining debt is fully deductible.
+
 ### Step 6: Scenario Modelling
 
 Run key scenarios:
@@ -128,6 +148,7 @@ Run key scenarios:
 | Retire at preservation age (60) | | | | |
 | Maximise salary sacrifice to retirement | | | | |
 | Downsize home (downsizer contribution) | | | | |
+| Base + debt recycling | | | | |
 | 20% market drop in Year 1 | | | | |
 | Higher spending (+20%) | | | | |
 | One spouse needs aged care | | | | |
@@ -138,12 +159,13 @@ Run key scenarios:
 
 Prioritised action items:
 1. Super contribution strategy (maximise concessional cap, consider non-concessional, carry-forward, spouse contributions)
-2. Asset allocation adjustments (across super and personal investments)
-3. Tax optimisation (salary sacrifice, franking credit strategies, CGT discount timing, negative gearing, asset location between super and personal)
-4. Centrelink optimisation (structuring assets to maximise Age Pension entitlement)
-5. Insurance structure review (inside vs outside super, cover adequacy, own occupation TPD)
-6. Estate planning: BDBN review, will update, testamentary trust consideration
-7. Aged care planning (if relevant)
+2. Debt recycling (if mortgage exists — convert non-deductible to deductible, build investment portfolio)
+3. Asset allocation adjustments (across super and personal investments)
+4. Tax optimisation (salary sacrifice, franking credit strategies, CGT discount timing, negative gearing, asset location between super and personal)
+5. Centrelink optimisation (structuring assets to maximise Age Pension entitlement)
+6. Insurance structure review (inside vs outside super, cover adequacy, own occupation TPD)
+7. Estate planning: BDBN review, will update, testamentary trust consideration
+8. Aged care planning (if relevant)
 
 ### Step 8: Output
 
@@ -151,6 +173,7 @@ Prioritised action items:
 - Cash flow projection spreadsheet (Excel) — aligned to financial year
 - Superannuation projection charts
 - Age Pension modelling summary
+- Debt recycling projection (if applicable) — debt composition shift, portfolio growth, tax savings
 - Goal funding analysis
 - Scenario comparison table
 - Action item checklist

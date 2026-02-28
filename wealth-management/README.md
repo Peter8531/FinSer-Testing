@@ -7,6 +7,7 @@ Wealth management tools for Australian financial advisers covering client review
 - **Client Management** - Review prep, performance reports, investment proposals
 - **Financial Planning** - Superannuation strategy, retirement projections, Age Pension modelling, estate planning
 - **Portfolio Management** - Rebalancing with CGT discount awareness, capital loss harvesting with Part IVA compliance
+- **Wealth Building** - Debt recycling (non-deductible to deductible mortgage conversion)
 - **Australian-Specific** - Franking credit optimisation, Centrelink means testing, super contribution strategy
 
 ## Installation
@@ -30,6 +31,7 @@ Or copy to your project's `.claude-plugin/` directory.
 | `/super-strategy [client]` | Optimise superannuation contributions and strategy |
 | `/centrelink [client]` | Model Age Pension eligibility and optimise means testing |
 | `/franking [client]` | Analyse and optimise franking credit strategy |
+| `/debt-recycling [client]` | Model debt recycling strategy for mortgage holders |
 
 ## Skills
 
@@ -54,11 +56,17 @@ Or copy to your project's `.claude-plugin/` directory.
 | **tax-loss-harvesting** | Capital loss harvesting with Part IVA anti-avoidance compliance |
 | **franking-strategy** | Dividend imputation optimisation, grossed-up yields, holding period rules |
 
+### Wealth Building
+| Skill | Description |
+|-------|-------------|
+| **debt-recycling** | Convert non-deductible mortgage to deductible investment debt, year-by-year projections, franking integration, exit strategies |
+
 ## Australian Context
 
 This plugin is adapted for Australian financial planning and covers:
 
 - **Superannuation**: Concessional/non-concessional caps, SG, salary sacrifice, TTR, pension phase, transfer balance cap, SMSF, downsizer contributions
+- **Debt Recycling**: Non-deductible to deductible mortgage conversion, loan structuring, franking credit integration, exit strategies
 - **Tax**: Australian tax brackets, Medicare Levy, CGT discount (50% for individuals), franking credits/dividend imputation, Part IVA anti-avoidance
 - **Centrelink**: Age Pension means testing (income test, assets test), deeming rates, gifting rules
 - **Regulatory**: AFSL obligations, Best Interest Duty (s961B), SOA/ROA requirements, FASEA Code of Ethics, ASIC oversight
@@ -100,6 +108,18 @@ This plugin is adapted for Australian financial planning and covers:
 # - After-tax income at client's marginal rate
 # - Portfolio tilt recommendations
 # - Holding period rule compliance
+```
+
+### Debt Recycling
+```
+/debt-recycling Smith Family
+
+# Models:
+# - Loan structure (non-deductible vs deductible splits)
+# - Year-by-year debt composition shift
+# - Investment portfolio growth (franked AU equities)
+# - Tax savings from interest deductions
+# - Exit strategy at retirement
 ```
 
 ## Configuration

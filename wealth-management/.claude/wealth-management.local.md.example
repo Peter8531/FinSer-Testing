@@ -1,0 +1,102 @@
+---
+# Wealth Management Plugin Settings (Australian)
+# Copy this file to .claude/wealth-management.local.md and customise
+
+# Your info
+name: "Your Name"
+title: "Financial Adviser"
+practice: "Your Practice Name"
+afsl: "AFSL 000000"  # Or "Authorised Representative of [Licensee] AFSL 000000"
+ar_number: "AR 000000"  # If applicable
+qualifications: "CFP, B.Com"
+email_signature: |
+  Kind regards,
+  [Your Name]
+  [Title] | [Practice]
+  [Qualifications]
+  AFSL [Number]
+  [Phone]
+
+# Coverage focus
+client_types:
+  - "Pre-retirees"
+  - "Retirees"
+  - "Young professionals"
+  - "Business owners"
+  - "SMSF trustees"
+specialisations:
+  - "Retirement planning"
+  - "Superannuation strategy"
+  - "SMSF advice"
+  - "Centrelink optimisation"
+
+# Platforms used
+platforms:
+  - "Netwealth"
+  - "HUB24"
+  - "BT Panorama"
+  - "Macquarie Wrap"
+
+# Preferred investment vehicles
+preferred_vehicles:
+  australian_equity: "VAS, IOZ, direct ASX"
+  international_equity: "VGS, IVV, IWLD"
+  fixed_income: "VAF, IAF"
+  property: "VAP, direct A-REITs"
+  cash: "Term deposits, HISA"
+
+# Active clients (for session reminders)
+active_clients:
+  - name: "Smith Family"
+    type: "Pre-retirement planning"
+    stage: "Accumulation — TTR review"
+    next_milestone: "Annual review"
+    date: "2026-03-15"
+    accounts: "Super (accum), Personal, Family Trust"
+  - name: "Jones Household"
+    type: "Retirement income"
+    stage: "Pension phase"
+    next_milestone: "Centrelink review after asset sale"
+    date: "2026-04-01"
+    accounts: "Super (pension), Personal, Joint"
+
+# Default assumptions
+default_assumptions:
+  inflation_rate: "2.5%"
+  super_guarantee_rate: "12%"
+  concessional_cap: "$30,000"
+  non_concessional_cap: "$120,000"
+  transfer_balance_cap: "$1,900,000"
+  age_pension_age: 67
+  preservation_age: 60
+  financial_year: "1 July - 30 June"
+
+# Benchmarks
+default_benchmarks:
+  australian_equity: "S&P/ASX 200 Total Return"
+  international_equity: "MSCI World ex-AU (AUD)"
+  fixed_income: "Bloomberg AusBond Composite"
+  balanced: "50% ASX 200 TR / 30% MSCI World / 20% AusBond"
+
+# Fee structure
+fee_model: "Fixed fee"  # or "Percentage", "Hybrid"
+typical_fee_range: "$3,300 - $6,600 p.a."
+---
+
+# Notes
+
+Add client-specific notes, market intel, or practice context here.
+
+## Market Themes
+- [Theme 1]: [Implications for clients]
+- [Theme 2]: [Implications for clients]
+
+## Key Contacts
+- [Accountant Name] @ [Firm]: [Shared clients]
+- [Mortgage Broker Name] @ [Firm]: [Referral relationship]
+- [Estate Lawyer Name] @ [Firm]: [Will/trust referrals]
+
+## Regulatory Updates
+| Date | Update | Impact |
+|------|--------|--------|
+| [Date] | [ASIC/ATO change] | [How it affects advice] |

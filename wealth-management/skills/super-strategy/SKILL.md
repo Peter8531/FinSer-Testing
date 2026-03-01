@@ -6,12 +6,15 @@ description: Produce an adviser working paper (paraplanning brief) for superannu
 
 ### Step 1: Current Super Position
 
-Gather for each household member:
+Gather for each household member. **If any of the items marked CRITICAL are missing, ask the adviser for them before proceeding. Do not estimate.**
+
+- **Total superannuation balance (TSB)** (as at prior 30 June): CRITICAL. Determines eligibility for carry-forward (<$500k), NCC cap, bring-forward trigger, co-contributions, and spouse contribution offset. Ask for this if not provided
 - **Super fund(s)**: Fund name, balance, investment option, fees (admin + investment + insurance)
 - **Insurance inside super**: Life cover amount, TPD cover amount and definition (any/own occupation), income protection (benefit amount, waiting period, benefit period)
+- **Current FY concessional contributions to date** (SG + salary sacrifice + personal deductible): CRITICAL. Needed to calculate remaining cap space
 - **Contribution history**: Concessional and non-concessional contributions this FY and prior years
-- **Unused concessional cap carry-forward**: Available if total super balance was <$500,000 at prior 30 June (up to 5 years)
-- **Total super balance** (as at prior 30 June): Determines eligibility for various strategies
+- **Unused concessional cap carry-forward**: CRITICAL. Must be verified via ATO portal (MyGov > ATO Online > Super > Concessional contributions). Do not estimate. Record verified amounts by FY and note expiry dates (FIFO)
+- **Recent NCC**: CRITICAL. Any NCC in current or prior FYs. If bring-forward was triggered, confirm start FY and remaining capacity
 - **Preservation age**: 60 (for those born after 1 July 1964)
 - **Employment status**: Employee, self-employed, or retired
 - **Employer SG rate**: Currently 11.5% (rising to 12% from 1 July 2025)

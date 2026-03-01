@@ -123,7 +123,7 @@ Copy the example config to personalise:
 cp .claude/wealth-management.local.md.example .claude/wealth-management.local.md
 ```
 
-Edit to include your name, AFSL details, preferred platforms, referral partners, strategy request preferences (liquidity floor, surplus allocation, risk mapping), and default assumptions.
+Edit to include your name, AFSL details, preferred platforms, partners (Akambo is part of the group; external referrals for estate planning, accounting, mortgage broking), strategy request preferences (liquidity floor, surplus allocation, risk mapping), and default assumptions.
 
 ## Key Files
 

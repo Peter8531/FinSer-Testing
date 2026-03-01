@@ -51,17 +51,17 @@ strategy_request:
     - "+3.0% interest rate stress test (modelling requirement)"
 
   # Insurance scope
-  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Refer to Akambo."
+  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Insurance product advice handled by Akambo (part of group)."
 
   # Platform preference
   platform_note: "Paraplanning to determine lowest total cost. Default shortlist: Netwealth, HUB24."
 
-# Referral and SMA partners
-referrals:
-  insurance_and_sma: "Akambo"  # Insurance referrals + SMA provider
-  estate_planning: "Danaher Moulton"
-  accountant: "[Accountant Name] @ [Firm]"
-  mortgage_broker: "[Broker Name] @ [Firm]"
+# Partners
+partners:
+  akambo: "Akambo"  # Part of the group (shared licensee). SMA provider + insurance product advice
+  estate_planning: "Danaher Moulton"  # External referral
+  accountant: "[Accountant Name] @ [Firm]"  # External referral
+  mortgage_broker: "[Broker Name] @ [Firm]"  # External referral
 
 # Platforms used
 platforms:
@@ -124,11 +124,11 @@ typical_fee_range: "$3,300 - $6,600 p.a."
 
 # Notes
 
-## Referral Contacts
-- Akambo: Insurance product advice (referred out of scope) + SMA provider
-- Danaher Moulton: Estate Planning (wills, testamentary trusts, POA)
-- [Accountant Name] @ [Firm]: Trust structuring, loan documentation, tax returns
-- [Broker Name] @ [Firm]: Mortgage restructuring, debt recycling loan splits
+## Partner and Referral Contacts
+- Akambo: Part of the group (shared licensee). SMA provider (CA and MA) + insurance product advice. Aligned on market views
+- Danaher Moulton: Estate Planning (wills, testamentary trusts, POA) — external referral
+- [Accountant Name] @ [Firm]: Trust structuring, loan documentation, tax returns — external referral
+- [Broker Name] @ [Firm]: Mortgage restructuring, debt recycling loan splits — external referral
 
 ## Regulatory Updates
 | Date | Update | Impact |

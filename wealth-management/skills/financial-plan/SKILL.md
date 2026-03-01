@@ -6,10 +6,16 @@ description: Produce an adviser working paper (paraplanning brief) for a compreh
 
 ### Step 1: Client Profile
 
-Gather or confirm:
+Gather or confirm. **If critical inputs are missing, ask the adviser before proceeding. Do not estimate or use placeholders.**
+
 - **Demographics**: Age, spouse/partner age, dependents, life expectancy assumptions
 - **Employment**: Current income (salary + super guarantee), expected pay rises, target retirement age, preservation age eligibility
-- **Superannuation**: All super accounts with balances, fund names, investment options, insurance held within super
+- **Superannuation** (CRITICAL — ask if not provided):
+  - All super accounts with balances, fund names, investment options, insurance held within super
+  - Total superannuation balance (TSB) per member as at prior 30 June (determines eligibility for carry-forward, NCC, bring-forward)
+  - Current FY concessional contributions to date (SG + salary sacrifice + personal deductible)
+  - Carry-forward concessional cap — must be verified via ATO portal, not estimated
+  - Recent NCC and bring-forward trigger status (if any NCC in current or prior FYs)
 - **Other Accounts**: Personal investments, family trust, company, insurance bonds, term deposits
 - **SMSF**: If self-managed — current assets, investment strategy document, audit status
 - **Income sources**: Salary, business income, rental income (including negative gearing), dividends (franked/unfranked), Centrelink benefits, super pension income
@@ -172,7 +178,7 @@ Prioritised action items:
 This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
 **Feeds into Summary of Advice:**
-- Numbered action items derived from the analysis (contribution strategy, debt strategy, insurance referral, estate referral, etc.)
+- Numbered action items derived from the analysis (contribution strategy, debt strategy, insurance scope note, estate referral, etc.)
 - Each item as a short, directive sentence
 
 **Feeds into Projection Parameters:**

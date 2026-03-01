@@ -82,6 +82,30 @@ These rules apply to all output. No exceptions.
 
 These rules apply across all SOA Summary Requests. They are derived from case experience and must be checked on every engagement.
 
+### Mandatory Information Gathering
+Before running any calculations, confirm the following critical inputs are available. If any are missing, **ask the adviser for them** rather than estimating or proceeding without them. All calculations must be fully worked from verified data.
+
+**Always required:**
+- Total superannuation balance (TSB) for each member (as at prior 30 June and current estimate). TSB determines eligibility for carry-forward, NCC cap, bring-forward, co-contributions, and spouse contribution offset
+- Carry-forward concessional cap: verified via ATO portal (MyGov > ATO Online > Super > Concessional contributions). Do not estimate. Record verified amounts by FY with retrieval date
+- Recent non-concessional contributions (NCC): any NCC made in the current or prior FYs that may affect the annual cap ($120,000) or bring-forward trigger ($360,000 over 3 years). If bring-forward was triggered, confirm which FY it started and remaining capacity
+- Current FY concessional contributions to date (SG + salary sacrifice + personal deductible): needed to calculate remaining cap space
+- Salary (ex-super) and employment details
+- Current super fund(s), balances, and investment options
+- Cash balances (bank, offset, term deposits)
+- Debt balances and terms (mortgage, HECS, investment loans)
+- Annual expenses and surplus cashflow
+
+**Ask if not provided:**
+- Risk profile (scored and selected)
+- Insurance status (inside/outside super, cover amounts)
+- Beneficiary nominations (type, percentages, expiry)
+- Trust or entity structures
+- Estate planning status (will, POA, BDBN)
+- Recent capital gains events or large transactions
+
+Do not run projections on assumed or placeholder data for the items listed above. If the adviser provides incomplete information, flag the gaps and ask before proceeding.
+
 ### Carry-Forward Verification
 Before finalising contributions, obtain MyGov > ATO Online > Super > More Information > Concessional contributions screenshots/PDFs showing unused cap amounts by FY. Use FIFO and check expiry (e.g., 2020-21 expiring 30 June 2026). Record the verified dollar amounts and the as-at retrieval date.
 
@@ -95,7 +119,7 @@ If risk score does not equal selected portfolio (e.g., B scored, C selected), in
 Capture current nomination types and percentages. Where nominees may be non-tax dependants, add short plain-English tax implication note and "review at retirement".
 
 ### Insurance Scope Discipline
-Insurance product advice is out of scope by default. Model premium cashflow drag only and record referral to Akambo. If retaining an existing fund for cover continuity, specify cash amount to retain and purpose.
+Insurance product advice is out of scope by default. Model premium cashflow drag only. Insurance product advice is handled by Akambo (part of the group, shared licensee). If retaining an existing fund for cover continuity, specify cash amount to retain and purpose.
 
 ### Alternatives Doctrine
 Alternatives must be viable strategy or product options and must include a clear dismissal (cohesive single-cell entry per alternative). The recommended platform/portfolio is never listed as an alternative. Keep Alternatives (Strategies) and Alternative Product Considerations as separate sections.

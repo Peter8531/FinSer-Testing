@@ -34,9 +34,9 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 |-----------------|------------------------|-------------------|
 | Netwealth Super/Wrap | Competitive admin fees, strong SMA range, good adviser portal | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
 | HUB24 Super/Wrap | Strong platform features, SMA access, reporting | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
-| Akambo SMA (CA) | Circumstances and Attitude. Designed to meet a specified drawdown requirement. Suitable for pre-retirement and retirement clients with an income target | Primary SMA for drawdown-phase clients. Listed as recommendation or dismissed based on client circumstances and drawdown needs |
-| Akambo SMA (MA) | Multi Asset. Largely capital growth. Suitable for accumulation-phase clients with long time horizon | Primary SMA for accumulation-phase clients. Listed as recommendation or dismissed based on client circumstances and growth objectives |
-| Akambo Collaborative Model | Effectively SMA. Collaborative structure with Akambo | Listed as recommendation or dismissed based on client needs. Functionally equivalent to SMA for portfolio construction purposes |
+| Akambo SMA (CA) | Part of the group (shared licensee). Circumstances and Attitude. Designed to meet a specified drawdown requirement. Suitable for pre-retirement and retirement clients with an income target | Primary SMA for drawdown-phase clients. Listed as recommendation or dismissed based on client circumstances and drawdown needs |
+| Akambo SMA (MA) | Part of the group (shared licensee). Multi Asset. Largely capital growth. Suitable for accumulation-phase clients with long time horizon | Primary SMA for accumulation-phase clients. Listed as recommendation or dismissed based on client circumstances and growth objectives |
+| Akambo Collaborative Model | Part of the group (shared licensee). Effectively SMA. Collaborative structure with Akambo | Listed as recommendation or dismissed based on client needs. Functionally equivalent to SMA for portfolio construction purposes |
 | Lonsec SMA | Closer to Akambo on pricing, established research house | Asset allocation can be slightly off-target and may shift at Lonsec's discretion without adviser input. Less control over allocation drift compared to Akambo |
 | Morningstar Wealth | Broad investment menu, managed account capability | Higher total cost at this balance; limited SMA customisation vs Akambo |
 | Mason Stevens | Wide investment universe, alternative asset access | Higher minimum, more complex fee structure, less integrated reporting |
@@ -55,6 +55,9 @@ Express liquidity as a floor (e.g., $50,000 minimum) and show the contribution f
 
 ### Partial Rollover for Insurance Continuity
 If insurance is under review or referral is pending, specify partial rollover to the new platform with cash left in the legacy fund (e.g., $10,000) to maintain cover until review completes. State the cash amount and its purpose.
+
+### Mandatory Information Gathering
+Before running any calculations, confirm critical inputs are available. If missing, ask the adviser rather than estimating. Critical inputs include: total superannuation balance (TSB) per member (as at prior 30 June), carry-forward concessional cap (verified via ATO portal), recent NCC and bring-forward status, current FY contributions to date. These determine eligibility for contribution strategies and must be verified, not assumed. See CONVENTIONS.md for the full list.
 
 ### Data Hygiene
 Standardise names (beneficiaries). Confirm as-at dates on balances. Require portal screenshots for investment option names and percentages before mapping to SMA.
@@ -102,6 +105,7 @@ Thanks, [Your Name]
 |---|------|--------|
 | 1 | 2026-02-18 | Initial creation from case learnings; added global rules, alternatives doctrine, operational patterns, and email stubs |
 | 2 | 2026-03-01 | Adapted from Copilot export into plugin format; integrated with CONVENTIONS.md and strategy-request skill |
+| 3 | 2026-03-01 | Akambo updated to reflect group alignment (shared licensee), not external referral. Added mandatory information-gathering pattern (TSB, carry-forward, NCC verification) |
 
 ## Important Notes
 

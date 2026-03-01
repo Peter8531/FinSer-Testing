@@ -6,24 +6,32 @@ description: Assemble an SOA Summary Request (Strategy Request) for paraplanning
 
 ### Step 1: Confirm Inputs
 
-Before assembling the Strategy Request, confirm the following are available:
+Before assembling the Strategy Request, confirm the following are available. **If any critical input is missing, ASK the adviser for it before proceeding.** Do not estimate or use placeholder data for items marked as critical.
 
-| Input | Source | Status |
-|-------|--------|--------|
-| Client/entity names and advice recipients | Fact find | |
-| Cashflow baseline (net income, expenses, current repayments, surplus) | Payslips, bank statements | |
-| Cash balances (inside/outside offset) | Bank/offset statements | |
-| Debt balances (PPR, investment, HECS) | Loan statements | |
-| Super platforms (current), balances, investment options | Super statements, portal screenshots | |
-| Insurance status (inside/outside super) | Fund statements | |
-| Contributions (this FY, planned next FY) | Payslips, ATO portal | |
-| Carry-forward concessional cap (verified via ATO) | MyGov > ATO Online > Super | |
-| Trust/entity status | Trust deed, accountant | |
-| Risk profile (scored and selected) | Risk profiling tool | |
-| Special goals (children funding, car purchase, etc.) | Fact find | |
-| Gap items still needed from client | Adviser notes | |
+| Input | Source | Critical | Status |
+|-------|--------|----------|--------|
+| Client/entity names and advice recipients | Fact find | Yes | |
+| Salary (ex-super) and employment details | Payslips | Yes | |
+| Cashflow baseline (net income, expenses, current repayments, surplus) | Payslips, bank statements | Yes | |
+| Cash balances (inside/outside offset) | Bank/offset statements | Yes | |
+| Debt balances (PPR, investment, HECS) | Loan statements | Yes | |
+| Total superannuation balance (TSB) per member (as at prior 30 June) | ATO portal, super statements | Yes | |
+| Super platforms (current), balances, investment options | Super statements, portal screenshots | Yes | |
+| Current FY concessional contributions to date (SG + salary sacrifice + personal deductible) | Payslips, ATO portal | Yes | |
+| Carry-forward concessional cap (verified via ATO, not estimated) | MyGov > ATO Online > Super | Yes | |
+| Recent NCC (current and prior FYs, bring-forward trigger status) | ATO portal, fund statements | Yes | |
+| Insurance status (inside/outside super) | Fund statements | | |
+| Trust/entity status | Trust deed, accountant | | |
+| Risk profile (scored and selected) | Risk profiling tool | | |
+| Special goals (children funding, car purchase, etc.) | Fact find | | |
+| Gap items still needed from client | Adviser notes | | |
 
-Flag any missing items in Notes to AA or Paraplanning.
+**Rules:**
+- All calculations must be fully worked from verified data. TSB, carry-forward, and NCC history are critical because they determine eligibility for contribution strategies
+- If carry-forward concessional cap data is not provided, ask for ATO portal screenshots before modelling contribution strategies
+- If TSB is not provided, ask before assessing NCC eligibility, bring-forward availability, or co-contribution entitlement
+- If recent NCC is not provided, ask before modelling non-concessional strategies
+- Flag any remaining missing items in Notes to AA or Paraplanning
 
 ### Step 2: Source-of-Truth Table
 
@@ -72,7 +80,7 @@ Typical action items include:
 - Investment strategy (risk profile, asset allocation, SMA mapping)
 - Debt strategy (PPR paydown, refinance, debt recycling structure)
 - Trust lending (amount, purpose, accountant/lawyer involvement)
-- Insurance referral (to referral partner, model premium drag only)
+- Insurance scope note (product advice handled by Akambo, part of group; model premium drag only)
 - Estate planning referral (BDBN, will update, testamentary trust)
 - Post-SOA actions (sell-down, transfers, implementation steps after acceptance)
 

@@ -1,8 +1,8 @@
 ---
-description: Produce a paraplanning brief for a debt recycling strategy
+description: Analyse and produce working papers for a debt recycling strategy
 argument-hint: "[client name]"
 ---
 
-Load the `debt-recycling` skill to produce an adviser working paper covering suitability assessment, loan structuring, investment selection, year-by-year projections, tax savings from interest deductions and franking credits, stress testing, and exit strategy. Output is a paraplanning brief with full calculation workings — not a client-facing document.
+Load the `debt-recycling` skill to produce strategy analysis and calculation workings covering suitability assessment, loan structuring, investment selection, year-by-year projections, cost of carry, stress testing, and exit strategy. Output feeds into the SOA Summary Request (use `/strategy-request` to assemble the final CRM-ready document).
 
 If a client name is provided, use it. Otherwise ask for client details.

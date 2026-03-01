@@ -86,43 +86,45 @@ Based on the review, suggest:
 - Aged care planning (if relevant — RAD, DAP, means-tested fees)
 - Ongoing Fee Arrangement renewal (if due)
 
-### Step 6: Output — Paraplanning Brief
+### Step 6: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Client name, household members, account types, total assets
-- Risk profile, life stage, last review date, outstanding action items
-- Ongoing Fee Arrangement (OFA) renewal date
+**Feeds into Summary of Advice:**
+- Recommended action items with responsible party and dates (rebalancing trades, contribution strategy changes, insurance review items)
+- Each item as a short, directive sentence
 
-**2. Strategy Analysis & Calculations**
+**Feeds into Projection Parameters:**
 - Performance table with benchmarks (YTD aligned to financial year July-June)
 - Allocation chart (current vs. target) with drift analysis
-- Performance attribution (top contributors/detractors, franking credits)
+- Source-of-Truth table for each input (document name, date, section)
 
-**3. Recommendations Summary**
-- Recommended action items with responsible party and dates
-- Rebalancing trades, contribution strategy changes, insurance review items
-- Meeting agenda and talking points
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., alternative rebalancing approaches, different contribution strategies)
 
-**4. Basis for Advice**
-- Rationale linking each recommendation to client goals, risk profile, and current circumstances
-- Record of Advice (ROA) if recommendations are provided and client circumstances haven't significantly changed (otherwise full SOA required)
-
-**5. Paraplanning Notes**
-- One-page client review summary (Word or PDF) for paraplanning to expand into formal SOA/ROA
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from client
+- Risk profile, life stage, last review date, outstanding action items
+- OFA renewal date, BDBN expiry, next review date
 - Flag any areas requiring further research or compliance review
-- Key dates: next review, OFA renewal, BDBN expiry
+
+**Calculation Workings (appendix):**
+- Performance attribution (top contributors/detractors, franking credits)
+- Allocation drift analysis with current vs. target percentages
+- Rationale linking each recommendation to client goals, risk profile, and current circumstances
+- ROA vs SOA determination (ROA if client circumstances have not significantly changed, otherwise full SOA required)
+- Meeting agenda and talking points
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- Know your client before the meeting — review notes from last meeting and any life changes
-- Lead with what the client cares about, not what you want to talk about
-- If performance was poor, address it directly — don't hide or spin
-- Always end with clear action items and next steps with dates
-- Document the meeting notes and any changes to the investment strategy
-- If advice is provided, document via SOA or ROA as required under the Corporations Act
-- Compliance: ensure all materials comply with AFSL obligations and ASIC regulatory guidance
-- Best Interest Duty (s961B): every recommendation must demonstrably be in the client's best interests
-- Ongoing Fee Arrangement must be renewed annually with client consent — flag if renewal is due
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Know your client before the meeting. Review notes from last meeting and any life changes.
+- Lead with what the client cares about, not what you want to talk about.
+- If performance was poor, address it directly. Do not hide or spin.
+- Always end with clear action items and next steps with dates.
+- Document the meeting notes and any changes to the investment strategy.
+- If advice is provided, document via SOA or ROA as required under the Corporations Act.
+- Compliance: ensure all materials comply with AFSL obligations and ASIC regulatory guidance.
+- Best Interest Duty (s961B): every recommendation must demonstrably be in the client's best interests.
+- Ongoing Fee Arrangement must be renewed annually with client consent. Flag if renewal is due.

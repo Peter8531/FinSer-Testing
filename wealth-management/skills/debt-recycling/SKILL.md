@@ -209,63 +209,62 @@ Maintain a complete debt recycling file:
 
 Keep for **5 years after the last relevant tax return** (standard ATO record-keeping requirement). In practice, keep for the life of the strategy plus 5 years.
 
-### Step 11: Output — Paraplanning Brief
+### Step 11: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Current mortgage balance, rate, term, repayment schedule
-- Surplus cash flow available for recycling (show derivation)
+**Feeds into Summary of Advice:**
+- Debt recycling action items (loan restructure, extra repayments, reborrow, invest, claim deductions)
+- Each item as a short, directive sentence (e.g., "Restructure home loan into Split A (non-deductible) and Split B (deductible investment loan). Redirect $20,000 p.a. ($1,667/month) surplus to debt recycling.")
+
+**Feeds into Projection Parameters:**
+- Mortgage balance, rate, term, repayment schedule
+- Surplus cashflow available for recycling (show derivation)
 - Marginal tax rate (current and projected)
-- Risk profile confirmation
-- All assumptions stated: interest rate, investment return, dividend yield, franking percentage, inflation
+- Interest rate, investment return, dividend yield, franking percentage, inflation
+- +3.0% interest rate stress test results
+- Source-of-Truth for each input
 
-**2. Strategy Analysis & Calculations**
+**Feeds into Alternatives:**
+- Full debt paydown before investing (dismiss: opportunity cost over time horizon)
+- Non-super investing without leverage (dismiss: loses deductible interest benefit)
+- Direct shares vs ETF/SMA for recycled portfolio
+
+**Feeds into Product Considerations:**
+- Platform for investment portfolio (paraplanning to determine lowest total cost)
+- ETF/SMA selection rationale
+
+**Feeds into Notes to AA or Paraplanning:**
+- Loan restructure: confirm lender supports split facility with redraw
+- Investment platform: confirm APL compliance for recommended ETFs/funds
+- Risk profile: confirm leveraged strategy aligns with documented risk profile
+- Accountant/tax agent involvement for tax return preparation
+- Record-keeping checklist for client (drawdown to investment purchase trail)
+- Mortgage broker referral if loan restructure required
+- Gap items to request from client
+
+**Calculation Workings (appendix):**
 - Suitability assessment with all factors documented
-- Loan restructure specification (Split A / Split B structure, lender instructions)
-- Investment recommendation with income yield and franking rationale
-- After-tax cost of carry analysis — full workings showing gross interest, deduction value, net cost vs dividend income
-- Year-by-year projection (debt composition shift, portfolio growth, tax savings) — every row calculable from stated assumptions
+- After-tax cost of carry analysis with full workings (gross interest, deduction value, net cost vs dividend income)
+- Year-by-year projection (debt composition shift, portfolio growth, tax savings), every row calculable from stated assumptions
+- Amortisation schedule (non-deductible paydown)
+- Deductible interest and tax saving by year
+- Portfolio accumulation (FV of annual contributions at assumed return)
+- Franking credit and dividend tax calculation at client's marginal rate
+- Crossover year (when non-deductible debt reaches $0)
 - Stress test results (rate rise, market crash, job loss, dividend cut)
 - Exit strategy options at retirement with CGT and NCC modelling
-
-**3. Recommendations Summary**
-- Prioritised action items with rationale and timing
-- Quantified benefit (net wealth uplift, cumulative tax savings, non-deductible payoff acceleration)
-- Risks and mitigations
-
-**4. Basis for Advice**
-- Key calculations supporting the recommendation — workings shown:
-  - Amortisation schedule (non-deductible paydown)
-  - Deductible interest and tax saving by year
-  - Portfolio accumulation (FV of annual contributions at assumed return)
-  - Franking credit and dividend tax calculation at client's marginal rate
-  - Net cost of carry derivation
-  - Crossover year (when non-deductible debt reaches $0)
-- Legislative references: TR 2000/2 (interest deductibility), s8-1 ITAA 1997 (general deduction), s961B (Best Interest Duty)
 - Comparison: recommended position vs do-nothing (quantified difference)
-
-**5. Paraplanning Notes**
-- Loan restructure: confirm lender supports split facility with redraw — paraplanner to check product features
-- Investment platform: confirm APL compliance for recommended ETFs/funds
-- Risk profile: confirm leveraged strategy aligns with documented risk profile — flag if reassessment needed
-- Record-keeping checklist for client (drawdown → investment purchase trail)
-- Accountant/tax agent involvement: recommend for annual tax return preparation
-- Information gaps to resolve before SOA can be finalised
+- Legislative references: TR 2000/2, s8-1 ITAA 1997, s961B
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- All calculations must show full workings — paraplanning needs the basis for advice, not just conclusions
-- Debt recycling is **not a tax scheme** — it is the legitimate conversion of non-deductible debt to deductible debt. Interest deductibility on investment borrowings is well established in Australian tax law (ATO Taxation Ruling TR 2000/2)
-- The strategy works because the ATO looks at the **purpose of the borrowed funds** (what the money was used to purchase), not the security for the loan (the home)
-- Funds must flow DIRECTLY from the investment loan split to the investment purchase — any detour through personal accounts, offsets, or other splits breaks the deductibility nexus
-- Do NOT mix deductible and non-deductible borrowings in the same loan split — ever
-- Interest-only on the deductible split is acceptable and often preferable (keeps deductions higher)
-- Franking credits are a powerful complement — fully franked dividends at 30% company tax almost fully offset tax at marginal rates up to 32%
-- This is a **leveraged strategy** — investments can fall while debt remains. The adviser must document that the client understands and accepts this risk
-- Emergency fund and adequate insurance are prerequisites, not optional — document in the brief
-- The strategy can be paused or stopped at any time — it does not require ongoing commitment to work (existing recycled amounts continue generating deductions)
-- Consider the interaction with Centrelink: the investment portfolio will be an assessable asset for Age Pension purposes, but the deductible debt reduces the net assessable amount
-- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics
-- Recommend the client involves their accountant/tax agent for tax return preparation to ensure deductions are correctly claimed
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All calculations must show full workings. Paraplanning needs the basis for advice, not just conclusions.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Debt recycling is not a tax scheme. Interest deductibility on investment borrowings is established in Australian tax law (TR 2000/2).
+- Funds must flow directly from the investment loan split to the investment purchase. Any detour breaks the deductibility nexus.
+- Do not mix deductible and non-deductible borrowings in the same loan split.
+- This is a leveraged strategy. The adviser must document that the client understands and accepts the risk.
+- Emergency fund and adequate insurance are prerequisites. Document in the brief.
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics.

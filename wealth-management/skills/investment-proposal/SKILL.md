@@ -86,53 +86,57 @@ Proposed allocation:
 - For retirees, lead with income security, Age Pension optimisation, and estate planning
 - For business owners, address business succession, super catch-up contributions, and trust structures
 
-### Step 4: Output — Paraplanning Brief
+### Step 4: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Prospect name, household details, current situation
-- Estimated total wealth, account types, current holdings
-- Super details (fund names, balances, insurance, investment options)
-- Goals, risk profile, constraints, fee sensitivity
+**Feeds into Summary of Advice:**
+- Recommended investment strategy mapped to goals and risk profile
+- Super strategy (fund/platform, investment option, contribution strategy)
+- Tax-aware approach (franking credits, CGT discount timing, asset location)
+- Fee structure: advisory fees, platform fees, fund MERs, total all-in cost
+- Each item as a short, directive sentence
 
-**2. Strategy Analysis & Calculations**
+**Feeds into Projection Parameters:**
 - Proposed asset allocation with vehicle selection and rationale
 - Projected growth scenarios (conservative, moderate, optimistic)
 - Monte Carlo probability of meeting goals
 - Retirement income projections (super pension + Age Pension if eligible)
 - Risk metrics (max drawdown, volatility)
+- Source-of-Truth table for each input (document name, date, section)
+
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., industry super, self-directed, other advisers)
 - Comparison to current portfolio/super fund (if known)
-- Franking credit income projections (for income-focused clients)
 
-**3. Recommendations Summary**
-- Recommended investment strategy mapped to goals and risk profile
-- Super strategy (fund/platform, investment option, contribution strategy)
-- Tax-aware approach (franking credits, CGT discount timing, asset location)
-- Fee structure: advisory fees, platform fees, fund MERs, total all-in cost
+**Feeds into Product Considerations:**
+- Platform and vehicle selection rationale (ETFs, LICs, managed funds, direct equities)
+- Products or platforms dismissed with reasoning
 
-**4. Basis for Advice**
-- How the proposed strategy addresses the prospect's specific goals and concerns
-- Why this approach over alternatives (industry super, self-directed, other advisers)
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from prospect
+- Risk profile confirmation
 - Getting started plan: SOA process, account opening, super rollover, transition plan, first 90 days
-
-**5. Paraplanning Notes**
-- PowerPoint presentation (12-15 slides) with firm branding for paraplanning to finalise
-- PDF leave-behind version
-- One-page summary for follow-up email
 - Flag any areas requiring compliance review before presenting to prospect
+
+**Calculation Workings (appendix):**
+- Franking credit income projections (for income-focused clients)
+- Fee comparison (current arrangement vs proposed)
+- How the proposed strategy addresses the prospect's specific goals and concerns
+- Legislative references supporting each recommendation
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- The proposal should feel personalised, not templated — reference their specific situation
-- Don't oversell performance — set realistic expectations and emphasise process and planning value
-- Always include disclaimers (projections are hypothetical, past performance does not indicate future performance)
-- Include AFSL general advice warning on all materials
-- The transition plan matters — clients fear the disruption of switching advisers or rolling over super
-- A full Statement of Advice (SOA) is required before implementing any recommendations — the proposal is not a substitute
-- Follow up within 48 hours with the proposal and a clear next step
-- Compliance must review before presenting to prospects
-- Best Interest Duty (s961B) applies from the moment personal advice is provided
-- Record all interactions in the client file for AFSL compliance
-- 14-day cooling-off period applies to most financial products — inform the client
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- The proposal should feel personalised, not templated. Reference their specific situation.
+- Do not oversell performance. Set realistic expectations and emphasise process and planning value.
+- Always include disclaimers (projections are hypothetical, past performance does not indicate future performance).
+- Include AFSL general advice warning on all materials.
+- The transition plan matters. Clients fear the disruption of switching advisers or rolling over super.
+- A full Statement of Advice (SOA) is required before implementing any recommendations. The proposal is not a substitute.
+- Follow up within 48 hours with the proposal and a clear next step.
+- Compliance must review before presenting to prospects.
+- Best Interest Duty (s961B) applies from the moment personal advice is provided.
+- Record all interactions in the client file for AFSL compliance.
+- 14-day cooling-off period applies to most financial products. Inform the client.

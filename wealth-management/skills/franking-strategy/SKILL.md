@@ -118,42 +118,50 @@ For income-focused clients (especially retirees), model the annual income includ
 - **Holding period rule**: Ensure shares are held "at risk" for 45 days to qualify for franking credits. Trading around ex-dividend dates purely for franking may fail this test
 - **Capital losses cannot offset franking credits**: If a client has net capital losses, they cannot use them to reduce tax on franked dividends. Franking credits only offset tax on the grossed-up dividend
 
-### Step 7: Output — Paraplanning Brief
+### Step 7: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Client tax position (marginal rate, account types, super phase)
-- Current portfolio holdings with franking profile
+**Feeds into Summary of Advice:**
+- Recommended portfolio adjustments (with franking impact)
+- Annual income and refund projection
+- Each item as a short, directive sentence
 
-**2. Strategy Analysis & Calculations**
+**Feeds into Projection Parameters:**
 - Franking credit audit of current portfolio
 - Grossed-up yield analysis for each holding
 - After-tax income comparison (current vs proposed allocation)
-- Holding period compliance check
-- Risk assessment (concentration, sector, policy)
+- Source-of-Truth table for each input (document name, date, section)
 
-**3. Recommendations Summary**
-- Recommended portfolio adjustments (with franking impact)
-- Annual income and refund projection
-
-**4. Basis for Advice**
-- Rationale for portfolio tilt or restructure (why the proposed allocation better serves the client's income and tax position)
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., alternative portfolio tilts, different vehicle selections)
 - Trade-offs considered (concentration risk, diversification, total return vs income)
 
-**5. Paraplanning Notes**
+**Feeds into Product Considerations:**
+- Vehicle comparison (direct shares, ETFs, LICs, managed funds) with franking profiles
+- Products or platforms dismissed with reasoning
+
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from client
+- Client tax position (marginal rate, account types, super phase)
 - Current franking credit rates and company tax rates used
 - Any holdings requiring holding period rule verification
-- Items needing client confirmation before SOA/ROA drafting
+- Items needing client confirmation
+
+**Calculation Workings (appendix):**
+- Holding period compliance check for each holding
+- Risk assessment (concentration, sector, policy)
+- Rationale for portfolio tilt or restructure (why the proposed allocation better serves the client's income and tax position)
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- Franking credits are most valuable for investors paying 0% tax (pension phase super, low-income earners) — they receive cash refunds
-- The 45-day holding period rule (90 days for preference shares) must be met for franking credit eligibility — ensure the client doesn't trade around ex-dividend dates
-- Small shareholder exemption (≤$5,000 total franking credits per FY) removes the holding period rule for most retail investors
-- Don't over-concentrate in Australian equities for franking — diversification and total return matter more than maximising franking
-- Franking credit refunds are received after tax return lodgement, not when the dividend is paid — plan cash flow accordingly
-- Base rate entities (company tax rate 25%) generate lower franking credits per dollar of dividend than companies taxed at 30%
-- LICs can pay dividends from profit reserves in years when portfolio income is lower — this smoothing can be valuable for income-dependent retirees
-- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Franking credits are most valuable for investors paying 0% tax (pension phase super, low-income earners). They receive cash refunds.
+- The 45-day holding period rule (90 days for preference shares) must be met for franking credit eligibility. Ensure the client does not trade around ex-dividend dates.
+- Small shareholder exemption ($5,000 or less total franking credits per FY) removes the holding period rule for most retail investors.
+- Do not over-concentrate in Australian equities for franking. Diversification and total return matter more than maximising franking.
+- Franking credit refunds are received after tax return lodgement, not when the dividend is paid. Plan cash flow accordingly.
+- Base rate entities (company tax rate 25%) generate lower franking credits per dollar of dividend than companies taxed at 30%.
+- LICs can pay dividends from profit reserves in years when portfolio income is lower. This smoothing can be valuable for income-dependent retirees.
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics.

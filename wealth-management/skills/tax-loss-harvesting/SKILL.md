@@ -115,47 +115,51 @@ Before selling Australian equities, check:
 - Update CGT schedule for the tax return
 - Advise accountant/tax agent of harvested losses for inclusion in the tax return
 
-### Step 8: Output — Paraplanning Brief
+### Step 8: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Client tax position (marginal rate, account types)
-- Current portfolio holdings with unrealised gains/losses
-- Capital gains budget (realised gains YTD, carry-forward losses)
-
-**2. Strategy Analysis & Calculations**
-- Harvest opportunity list with prioritisation
-- Tax savings estimate at client's marginal rate
-- Part IVA risk assessment for each trade
-- Franking credit impact analysis (if selling Australian equities)
-
-**3. Recommendations Summary**
+**Feeds into Summary of Advice:**
 - Recommended trades with replacement securities
 - Updated portfolio allocation (before/after)
 - Net tax savings summary
+- Each item as a short, directive sentence
 
-**4. Basis for Advice**
-- Non-tax investment rationale for each trade (rebalancing, cost reduction, diversification improvement)
+**Feeds into Projection Parameters:**
+- Harvest opportunity list with prioritisation
+- Tax savings estimate at client's marginal rate
+- Capital gains budget (realised gains YTD, carry-forward losses)
+- Source-of-Truth table for each input (document name, date, section)
+
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., alternative replacement securities, different harvest timing, partial vs full position sales)
 - Trade-offs considered (cost base step-down, transaction costs, tracking error)
 
-**5. Paraplanning Notes**
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from client
 - Part IVA compliance documentation for each trade
 - CGT schedule updates required for tax return
-- Items needing client or accountant confirmation before SOA/ROA drafting
+- Items needing client or accountant confirmation
+
+**Calculation Workings (appendix):**
+- Part IVA risk assessment for each trade
+- Franking credit impact analysis (if selling Australian equities)
+- Non-tax investment rationale for each trade (rebalancing, cost reduction, diversification improvement)
+- Client tax position (marginal rate, account types) and current portfolio holdings with unrealised gains/losses
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- Capital losses can ONLY offset capital gains — they cannot reduce ordinary income (salary, interest, dividends)
-- There is no wash sale rule in Australia, but Part IVA anti-avoidance provisions can deny tax benefits for schemes with a dominant tax purpose
-- Always document a genuine, non-tax investment rationale for each trade
-- Consider the long-term cost base step-down — harvesting resets cost base, meaning larger gains when eventually sold
-- **End of financial year (30 June)** is prime harvesting season, not 31 December
-- Harvesting in super pension phase provides no tax benefit — earnings are already tax-free
-- Harvesting in super accumulation saves tax at only 15% (or 10% on discounted gains) — ensure transaction costs justify it
-- Check franking credit entitlements before selling Australian equities (45-day holding period rule)
-- Capital losses cannot offset franking credit refunds
-- Not all losses are worth harvesting — brokerage costs, bid-ask spreads, and tracking error have real costs
-- Keep detailed records for the CGT schedule in the tax return
-- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Capital losses can ONLY offset capital gains. They cannot reduce ordinary income (salary, interest, dividends).
+- There is no wash sale rule in Australia, but Part IVA anti-avoidance provisions can deny tax benefits for schemes with a dominant tax purpose.
+- Always document a genuine, non-tax investment rationale for each trade.
+- Consider the long-term cost base step-down. Harvesting resets cost base, meaning larger gains when eventually sold.
+- **End of financial year (30 June)** is prime harvesting season, not 31 December.
+- Harvesting in super pension phase provides no tax benefit. Earnings are already tax-free.
+- Harvesting in super accumulation saves tax at only 15% (or 10% on discounted gains). Ensure transaction costs justify it.
+- Check franking credit entitlements before selling Australian equities (45-day holding period rule).
+- Capital losses cannot offset franking credit refunds.
+- Not all losses are worth harvesting. Brokerage costs, bid-ask spreads, and tracking error have real costs.
+- Keep detailed records for the CGT schedule in the tax return.
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics.

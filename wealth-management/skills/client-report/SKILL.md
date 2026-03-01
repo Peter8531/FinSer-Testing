@@ -101,47 +101,46 @@ Brief market summary tailored to the client's level of sophistication:
 - Next review date
 - Ongoing Fee Arrangement renewal date
 
-### Step 8: Output — Paraplanning Brief
+### Step 8: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Client name, household, reporting period, accounts included
-- Benchmark selection (from SOA/IPS)
-- Firm branding requirements (logo, AFSL number, disclaimers)
+**Feeds into Summary of Advice:**
+- Progress toward financial goals
+- Any changes to recommendations or strategy
+- Upcoming action items and next review date, each as a short directive sentence
 
-**2. Strategy Analysis & Calculations**
+**Feeds into Projection Parameters:**
 - Performance summary tables (household and by account, QTD/FYTD/1-Year/3-Year/5-Year/ITD)
 - Income summary including dividends, franking credits, interest, trust distributions, super pension income
 - Allocation overview with current vs. benchmark percentages
+- Source-of-Truth table for each input (document name, date, section)
+
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., alternative benchmark selections, different reporting approaches)
+
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from client
+- Contribution cap usage, Centrelink status, BDBN expiry dates, OFA renewal date
+- Firm branding requirements (logo, AFSL number, disclaimers)
+- Flag any areas requiring compliance review before client distribution
+
+**Calculation Workings (appendix):**
 - Holdings detail with yields, franked yields, and CGT discount eligibility
 - Activity summary (trades, contributions, drawdowns, fees, distributions)
-
-**3. Recommendations Summary**
-- Progress toward financial goals
-- Any changes to recommendations or strategy
-- Upcoming action items and next review date
-
-**4. Basis for Advice**
 - Market commentary tailored to client sophistication level
 - Rationale for current positioning and any recommended changes
-- Planning notes: contribution cap usage, Centrelink status, BDBN expiry dates, OFA renewal date
-
-**5. Paraplanning Notes**
-- PDF report (8-12 pages) with firm branding and AFSL details for paraplanning to finalise
-- Word document for customisation
-- Excel data appendix (optional)
-- Flag any areas requiring compliance review before client distribution
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- Performance must be calculated net of fees unless client/compliance requires gross
-- Always include appropriate disclaimers and AFSL general advice warning
-- Include franking credits in income summaries — they are a material component of Australian equity returns
-- Reports should be consistent across clients — use a standard template
-- Match the level of detail to the client — some want every holding, others want a one-page summary
-- Benchmark selection matters — use the benchmark from the SOA/IPS, not whatever looks most flattering
-- Report periods should align with the Australian financial year (1 July - 30 June) for YTD/annual figures
-- Review for compliance approval before first distribution of a new template
-- Ensure compliance with AFSL obligations and ASIC Regulatory Guide 175 (licensing) requirements
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Performance must be calculated net of fees unless client/compliance requires gross.
+- Always include appropriate disclaimers and AFSL general advice warning.
+- Include franking credits in income summaries. They are a material component of Australian equity returns.
+- Reports should be consistent across clients. Use a standard template.
+- Match the level of detail to the client. Some want every holding, others want a one-page summary.
+- Benchmark selection matters. Use the benchmark from the SOA/IPS, not whatever looks most flattering.
+- Report periods should align with the Australian financial year (1 July to 30 June) for YTD/annual figures.
+- Review for compliance approval before first distribution of a new template.
+- Ensure compliance with AFSL obligations and ASIC Regulatory Guide 175 (licensing) requirements.

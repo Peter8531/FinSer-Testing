@@ -1,7 +1,7 @@
 {
   "name": "wealth-management",
-  "version": "0.2.0-au",
-  "description": "Adviser working paper and paraplanning brief generator for Australian wealth management. Produces strategy analysis, calculations with full workings, and recommendation summaries for paraplanning to draft formal SOA/ROA documentation. Covers financial planning, superannuation, debt recycling, Centrelink, franking credits, portfolio management, and client reporting.",
+  "version": "0.3.0-au",
+  "description": "SOA Summary Request generator for Australian wealth management. Produces strategy analysis with full calculation workings, then assembles CRM-ready Strategy Requests for associates and paraplanning to draft formal SOA/ROA documentation. Covers financial planning, superannuation, debt recycling, Centrelink, franking credits, portfolio management, and client reporting.",
   "author": {
     "name": "Anthropic FSI"
   }

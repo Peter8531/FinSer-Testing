@@ -3,7 +3,7 @@
 # Copy this file to .claude/wealth-management.local.md and customise
 
 # Your info
-name: "Your Name"
+name: "Peter Campbell"
 title: "Financial Adviser"
 practice: "Your Practice Name"
 afsl: "AFSL 000000"  # Or "Authorised Representative of [Licensee] AFSL 000000"
@@ -11,8 +11,8 @@ ar_number: "AR 000000"  # If applicable
 qualifications: "CFP, B.Com"
 email_signature: |
   Kind regards,
-  [Your Name]
-  [Title] | [Practice]
+  Peter Campbell
+  Financial Adviser | [Practice]
   [Qualifications]
   AFSL [Number]
   [Phone]
@@ -27,38 +27,61 @@ client_types:
 specialisations:
   - "Retirement planning"
   - "Superannuation strategy"
-  - "SMSF advice"
+  - "Debt recycling"
   - "Centrelink optimisation"
+
+# Strategy Request preferences
+strategy_request:
+  # Liquidity / reserve
+  liquidity_floor: "$50,000"  # Minimum cash reserve unless otherwise stated
+
+  # Surplus allocation (where Family Trust is involved)
+  surplus_split:
+    personal_retain: "20%"
+    trust_loan: "80%"  # Subject to accountant confirmation
+    note: "80% loaned to Family Trust for investment"
+
+  # Risk profile mapping defaults
+  risk_mapping:
+    super: "Profile D (0% income, growth tilt)"
+    family_trust: "Profile C (6% income target)"
+
+  # Stress test requirements
+  mandatory_stress_tests:
+    - "+3.0% interest rate stress test (modelling requirement)"
+
+  # Insurance scope
+  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Refer to Akambo Insurance."
+
+  # Platform preference
+  platform_note: "Paraplanning to determine lowest total cost. Default shortlist: Netwealth, HUB24."
+
+# Referral partners
+referrals:
+  insurance: "Akambo Insurance"
+  estate_planning: "Danaher Moulton"
+  accountant: "[Accountant Name] @ [Firm]"
+  mortgage_broker: "[Broker Name] @ [Firm]"
 
 # Platforms used
 platforms:
   - "Netwealth"
   - "HUB24"
-  - "BT Panorama"
-  - "Macquarie Wrap"
 
 # Preferred investment vehicles
 preferred_vehicles:
-  australian_equity: "VAS, IOZ, direct ASX"
-  international_equity: "VGS, IVV, IWLD"
+  australian_equity: "VAS, IOZ, A200"
+  international_equity: "VGS, IVV"
   fixed_income: "VAF, IAF"
-  property: "VAP, direct A-REITs"
-  cash: "Term deposits, HISA"
+  property: "VAP"
+  cash: "Term deposits, HISA, offset"
 
 # Active clients (for session reminders)
 active_clients:
-  - name: "Smith Family"
-    type: "Pre-retirement planning"
-    stage: "Accumulation — TTR review"
-    next_milestone: "Annual review"
-    date: "2026-03-15"
-    accounts: "Super (accum), Personal, Family Trust"
-  - name: "Jones Household"
-    type: "Retirement income"
-    stage: "Pension phase"
-    next_milestone: "Centrelink review after asset sale"
-    date: "2026-04-01"
-    accounts: "Super (pension), Personal, Joint"
+  - name: "Client A"
+    type: "Pre-retirement"
+    stage: "SOA Summary Request in progress"
+    accounts: "Super, Personal, Family Trust"
 
 # Default assumptions
 default_assumptions:
@@ -79,24 +102,32 @@ default_benchmarks:
   balanced: "50% ASX 200 TR / 30% MSCI World / 20% AusBond"
 
 # Fee structure
-fee_model: "Fixed fee"  # or "Percentage", "Hybrid"
+fee_model: "Fixed fee"
 typical_fee_range: "$3,300 - $6,600 p.a."
 ---
 
 # Notes
 
-Add client-specific notes, market intel, or practice context here.
-
-## Market Themes
-- [Theme 1]: [Implications for clients]
-- [Theme 2]: [Implications for clients]
-
-## Key Contacts
-- [Accountant Name] @ [Firm]: [Shared clients]
-- [Mortgage Broker Name] @ [Firm]: [Referral relationship]
-- [Estate Lawyer Name] @ [Firm]: [Will/trust referrals]
+## Referral Contacts
+- Akambo Insurance: Insurance product advice (referred out of scope)
+- Danaher Moulton: Estate Planning (wills, testamentary trusts, POA)
+- [Accountant Name] @ [Firm]: Trust structuring, loan documentation, tax returns
+- [Broker Name] @ [Firm]: Mortgage restructuring, debt recycling loan splits
 
 ## Regulatory Updates
 | Date | Update | Impact |
 |------|--------|--------|
 | [Date] | [ASIC/ATO change] | [How it affects advice] |
+
+## Strategy Request Quality Checklist
+Before finalising any Strategy Request, verify:
+1. Tables paste cleanly to Word/CRM (no bullets/special characters)
+2. Summary is action-only (assumptions in Projection Parameters)
+3. Alternatives are adviser-considered and dismissed (not new strategies)
+4. Product Considerations are platform/product comparisons (not strategies)
+5. Notes list gap items to request from client
+6. Key numbers appear twice where helpful (annual and monthly)
+7. Carry-forward verified via ATO portal (not estimated)
+8. Source-of-Truth documented for all key inputs
+9. Risk profile mismatch disclosed if applicable
+10. Insurance continuity flagged for any super rollovers

@@ -1,8 +1,8 @@
 ---
-description: Produce a paraplanning brief for franking credit strategy
+description: Analyse and produce working papers for franking credit strategy
 argument-hint: "[client name or account]"
 ---
 
-Load the `franking-strategy` skill to produce an adviser working paper covering franking credit audit, grossed-up yield analysis, holding period compliance, and portfolio adjustment recommendations. Output is a paraplanning brief with full calculation workings — not a client-facing document.
+Load the `franking-strategy` skill to produce strategy analysis and calculation workings covering franking credit audit, grossed-up yield analysis, holding period compliance, and portfolio adjustment recommendations. Output feeds into the SOA Summary Request (use `/strategy-request` to assemble the final CRM-ready document).
 
 If a client or account is provided, use it. Otherwise ask for portfolio details.

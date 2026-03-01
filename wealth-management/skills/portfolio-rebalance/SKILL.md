@@ -86,44 +86,46 @@ Optimise which assets are held in which account types:
   - Franking credits at risk (if selling near ex-dividend)
 - Net effect on allocation drift (before vs after)
 
-### Step 6: Output — Paraplanning Brief
+### Step 6: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Account types and holdings with current market values
-- Cost base and unrealised gains/losses per position
-- Target allocation (from IPS or existing SOA)
-
-**2. Strategy Analysis & Calculations**
-- Drift analysis table
-- Tax impact summary (CGT, franking credits)
-- Asset location review
-
-**3. Recommendations Summary**
-- Recommended trade list (Excel)
-- Before/after allocation comparison
+**Feeds into Summary of Advice:**
+- Recommended trade list with before/after allocation comparison
 - Asset location recommendations
+- Each item as a short, directive sentence
 
-**4. Basis for Advice**
-- Rationale for each trade (rebalancing, tax-loss harvesting, asset location optimisation)
-- Why the recommended approach is tax-efficient across account types
+**Feeds into Projection Parameters:**
+- Drift analysis table (current vs target allocation with drift percentages)
+- Tax impact summary (CGT, franking credits)
+- Source-of-Truth table for each input (document name, date, section)
 
-**5. Paraplanning Notes**
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., alternative rebalancing approaches, different trade sequencing, cash flow rebalancing vs active trades)
+
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from client
 - Part IVA compliance documentation for each trade
 - Pending cash flows that may affect execution timing
 - Client-specific restrictions (ESG, concentrated stock, platform limitations)
 
+**Calculation Workings (appendix):**
+- Account types and holdings with current market values, cost base, and unrealised gains/losses
+- Asset location review across account types
+- Rationale for each trade (rebalancing, tax-loss harvesting, asset location optimisation)
+- Why the recommended approach is tax-efficient across account types
+
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- Don't rebalance for rebalancing's sake — small drift within bands is fine
-- Tax costs can outweigh rebalancing benefits in personal accounts — calculate the breakeven, especially for positions with large unrealised gains without CGT discount eligibility
-- Consider pending cash flows (super contributions, pension drawdowns, salary sacrifice, dividends) before trading
-- Check for any client-specific restrictions (ESG preferences, concentrated stock, platform restrictions)
-- Document rationale for every trade for compliance records and SOA/ROA requirements
-- No wash sale rule in Australia, but Part IVA anti-avoidance applies to schemes with a dominant tax purpose
-- Minimum pension drawdown requirements may create natural rebalancing opportunities (sell overweight assets to fund drawdowns)
-- Super contribution caps reset each 1 July — consider timing of contributions to underweight asset classes
-- Rebalancing across super and personal accounts requires coordinating with the client's overall tax position
-- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Do not rebalance for rebalancing's sake. Small drift within bands is fine.
+- Tax costs can outweigh rebalancing benefits in personal accounts. Calculate the breakeven, especially for positions with large unrealised gains without CGT discount eligibility.
+- Consider pending cash flows (super contributions, pension drawdowns, salary sacrifice, dividends) before trading.
+- Check for any client-specific restrictions (ESG preferences, concentrated stock, platform restrictions).
+- Document rationale for every trade for compliance records and SOA/ROA requirements.
+- No wash sale rule in Australia, but Part IVA anti-avoidance applies to schemes with a dominant tax purpose.
+- Minimum pension drawdown requirements may create natural rebalancing opportunities (sell overweight assets to fund drawdowns).
+- Super contribution caps reset each 1 July. Consider timing of contributions to underweight asset classes.
+- Rebalancing across super and personal accounts requires coordinating with the client's overall tax position.
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics.

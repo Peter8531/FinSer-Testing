@@ -153,48 +153,52 @@ If the client has multiple super accounts:
 - Employer contribution direction (update with new fund details)
 - Lodge rollover via myGov/ATO or fund-to-fund transfer form
 
-### Step 7: Output — Paraplanning Brief
+### Step 7: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Client name, household members, employment status, preservation age
-- Super fund(s): fund names, balances, investment options, fees, insurance inside super
-- Contribution history (concessional and non-concessional this FY and prior years)
-- Unused concessional cap carry-forward, total super balance (prior 30 June)
+**Feeds into Summary of Advice:**
+- Super strategy summary (contribution plan, investment recommendation, insurance review)
+- Contribution schedule for the financial year
+- Fund consolidation recommendation (if applicable)
+- Action items with responsible party and dates, each as a short directive sentence
 
-**2. Strategy Analysis & Calculations**
+**Feeds into Projection Parameters:**
 - Contribution optimisation tables (concessional cap usage, carry-forward, NCC cap and bring-forward)
 - TTR modelling (salary sacrifice vs TTR income stream, net benefit per year, projected additional super at retirement)
 - Pension phase transition plan (transfer balance cap tracking, minimum drawdown schedule)
 - Fund comparison (fees, insurance, performance) and consolidation analysis
+- Source-of-Truth table for each input (document name, date, section)
 
-**3. Recommendations Summary**
-- Super strategy summary (contribution plan, investment recommendation, insurance review)
-- Contribution schedule for the financial year
-- Fund consolidation recommendation (if applicable)
-- Action items with responsible party and dates
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., alternative contribution approaches, different fund structures, TTR vs direct salary sacrifice)
 
-**4. Basis for Advice**
-- Rationale linking each recommendation to client goals, risk profile, and tax position
-- Decision frameworks applied (marginal rate vs 15% contributions tax, Division 293 impact, NCC eligibility)
-- Getting started plan: pension phase transition timeline, rollover process, employer SG redirection
+**Feeds into Product Considerations:**
+- Super fund and platform comparisons (fees, insurance, investment options)
+- Products or platforms dismissed with reasoning
 
-**5. Paraplanning Notes**
-- One-page super strategy summary for paraplanning to expand into formal SOA/ROA
-- Flag any areas requiring further research or compliance review (e.g., defined benefit components, SMSF compliance)
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from client
+- Risk profile, employment status, preservation age
 - Key dates: contribution deadlines (30 June), BDBN expiry, insurance review, OFA renewal
+- Flag any areas requiring further research or compliance review (e.g., defined benefit components, SMSF compliance)
+
+**Calculation Workings (appendix):**
+- Decision frameworks applied (marginal rate vs 15% contributions tax, Division 293 impact, NCC eligibility)
+- Rationale linking each recommendation to client goals, risk profile, and tax position
+- Getting started plan: pension phase transition timeline, rollover process, employer SG redirection
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- Contribution caps reset each 1 July — plan contributions before 30 June each year
-- Carry-forward unused concessional cap is only available if total super balance was <$500,000 at the prior 30 June
-- Non-concessional contributions are blocked entirely if total super balance ≥$1.9M
-- Division 293 applies to income + concessional contributions >$250,000 — still beneficial vs 45% marginal rate but the saving is reduced
-- TTR earnings are taxed at 15% (not tax-free) — only becomes tax-free when a full condition of release is met
-- Downsizer contributions are counted in the Centrelink assets test — model the Age Pension impact before contributing
-- SMSF members are trustees and personally liable for compliance — ensure investment strategy, audit, and sole purpose test are current
-- Insurance inside super erodes the balance — review regularly to ensure the cover is still needed and cost-effective
-- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics
-- Personal deductible contributions: must lodge a notice of intent with the fund and receive acknowledgement BEFORE lodging the tax return or rolling over
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Contribution caps reset each 1 July. Plan contributions before 30 June each year.
+- Carry-forward unused concessional cap is only available if total super balance was <$500,000 at the prior 30 June.
+- Non-concessional contributions are blocked entirely if total super balance is $1.9M or above.
+- Division 293 applies to income + concessional contributions >$250,000. Still beneficial vs 45% marginal rate but the saving is reduced.
+- TTR earnings are taxed at 15% (not tax-free). Only becomes tax-free when a full condition of release is met.
+- Downsizer contributions are counted in the Centrelink assets test. Model the Age Pension impact before contributing.
+- SMSF members are trustees and personally liable for compliance. Ensure investment strategy, audit, and sole purpose test are current.
+- Insurance inside super erodes the balance. Review regularly to ensure the cover is still needed and cost-effective.
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics.
+- Personal deductible contributions: must lodge a notice of intent with the fund and receive acknowledgement BEFORE lodging the tax return or rolling over.

@@ -1,18 +1,19 @@
 # Wealth Management Plugin (Australian)
 
-Adviser working paper and paraplanning brief generator for Australian wealth management. Produces strategy analysis, calculations with full workings, and recommendation summaries that go to **paraplanning** for formal SOA/ROA documentation.
+SOA Summary Request generator for Australian wealth management. Produces strategy analysis with full calculation workings, then assembles CRM-ready **Strategy Requests** for associates and paraplanning to draft formal SOA/ROA documentation.
 
-**This plugin does not produce client-facing advice.** It produces internal adviser working papers — the analysis, calculations, and rationale that form the basis for paraplanning to draft compliant documentation. See [CONVENTIONS.md](CONVENTIONS.md) for the output format.
+**This plugin does not produce client-facing advice.** It produces adviser working papers: the analysis, calculations, and rationale that feed into your SOA Summary Request template. See [CONVENTIONS.md](CONVENTIONS.md) for house style rules and output format.
 
 Adapted for Australian tax law, superannuation rules, Centrelink means testing, AFSL obligations, and ASIC regulatory requirements.
 
 ## Features
 
-- **Client Management** - Review prep, performance reports, investment proposals
+- **Strategy Request Assembly** - SOA Summary Request output in standard template format, CRM-ready
+- **Strategic Library** - Alternatives doctrine, common dismissals, operational patterns, case learnings
 - **Financial Planning** - Superannuation strategy, retirement projections, Age Pension modelling, estate planning
-- **Portfolio Management** - Rebalancing with CGT discount awareness, capital loss harvesting with Part IVA compliance
 - **Wealth Building** - Debt recycling (non-deductible to deductible mortgage conversion)
-- **Australian-Specific** - Franking credit optimisation, Centrelink means testing, super contribution strategy
+- **Portfolio Management** - Rebalancing with CGT discount awareness, capital loss harvesting with Part IVA compliance
+- **Client Management** - Review prep, performance reports, investment proposals
 
 ## Installation
 
@@ -24,29 +25,29 @@ Or copy to your project's `.claude-plugin/` directory.
 
 ## Commands
 
-Each command produces a **paraplanning brief** — an adviser working paper with full calculation workings.
+Analytical commands produce working papers. The `/strategy-request` command assembles them into the final SOA Summary Request.
 
-| Command | Paraplanning Brief For |
-|---------|----------------------|
-| `/client-review [client]` | Client review meeting — performance, allocation, talking points |
-| `/client-report [client] [period]` | Performance report — returns, income, franking summaries |
-| `/financial-plan [client]` | Financial plan — super, retirement, Age Pension, debt recycling, estate |
-| `/proposal [prospect]` | Investment proposal — prospect analysis, strategy rationale |
-| `/rebalance [client]` | Portfolio rebalancing — drift analysis, tax-aware trades |
-| `/tlh [client]` | Capital loss harvesting — harvestable losses, Part IVA rationale |
-| `/super-strategy [client]` | Superannuation strategy — contributions, TTR, pension, TBC |
-| `/centrelink [client]` | Centrelink optimisation — means testing, asset structuring |
-| `/franking [client]` | Franking credit strategy — grossed-up yields, holding periods |
-| `/debt-recycling [client]` | Debt recycling — loan structure, projections, cost of carry |
+| Command | Output |
+|---------|--------|
+| `/strategy-request [client]` | **SOA Summary Request** (full template: Entities, Summary, Alternatives, Products, Projections, TMD, Notes) |
+| `/financial-plan [client]` | Financial plan analysis (super, retirement, Age Pension, debt recycling, estate) |
+| `/debt-recycling [client]` | Debt recycling analysis (loan structure, projections, cost of carry) |
+| `/super-strategy [client]` | Super strategy analysis (contributions, TTR, pension, TBC) |
+| `/centrelink [client]` | Centrelink analysis (means testing, asset structuring) |
+| `/franking [client]` | Franking credit analysis (grossed-up yields, holding periods) |
+| `/rebalance [client]` | Portfolio rebalancing analysis (drift, tax-aware trades) |
+| `/tlh [client]` | Capital loss harvesting analysis (harvestable losses, Part IVA) |
+| `/client-review [client]` | Client review meeting prep (performance, allocation, talking points) |
+| `/client-report [client] [period]` | Performance report data (returns, income, franking summaries) |
+| `/proposal [prospect]` | Investment proposal analysis (prospect analysis, strategy rationale) |
 
 ## Skills
 
-### Client Management
+### Strategy Assembly
 | Skill | Description |
 |-------|-------------|
-| **client-review** | Meeting prep with performance, allocation, talking points |
-| **client-report** | Quarterly/annual reports with franking credit summaries |
-| **investment-proposal** | Prospect proposals with AFSL details and ASX vehicles |
+| **strategy-request** | Assembles the final SOA Summary Request from analytical working papers |
+| **strategic-library** | Reusable guidance: alternatives doctrine, common dismissals, operational patterns |
 
 ### Financial Planning
 | Skill | Description |
@@ -54,6 +55,7 @@ Each command produces a **paraplanning brief** — an adviser working paper with
 | **financial-plan** | Super strategy, retirement projections, Age Pension modelling, estate planning |
 | **super-strategy** | Contribution optimisation, TTR, pension phase, transfer balance cap, SMSF |
 | **centrelink-optimisation** | Income test, assets test, deeming rates, gifting rules |
+| **debt-recycling** | Non-deductible to deductible mortgage conversion, year-by-year projections, franking integration |
 
 ### Portfolio Management
 | Skill | Description |
@@ -62,77 +64,55 @@ Each command produces a **paraplanning brief** — an adviser working paper with
 | **tax-loss-harvesting** | Capital loss harvesting with Part IVA anti-avoidance compliance |
 | **franking-strategy** | Dividend imputation optimisation, grossed-up yields, holding period rules |
 
-### Wealth Building
+### Client Management
 | Skill | Description |
 |-------|-------------|
-| **debt-recycling** | Convert non-deductible mortgage to deductible investment debt, year-by-year projections, franking integration, exit strategies |
+| **client-review** | Meeting prep with performance, allocation, talking points |
+| **client-report** | Quarterly/annual reports with franking credit summaries |
+| **investment-proposal** | Prospect proposals with AFSL details and ASX vehicles |
 
-## Australian Context
+## Workflow
 
-This plugin is adapted for Australian financial planning and covers:
+The typical workflow is:
 
-- **Superannuation**: Concessional/non-concessional caps, SG, salary sacrifice, TTR, pension phase, transfer balance cap, SMSF, downsizer contributions
-- **Debt Recycling**: Non-deductible to deductible mortgage conversion, loan structuring, franking credit integration, exit strategies
-- **Tax**: Australian tax brackets, Medicare Levy, CGT discount (50% for individuals), franking credits/dividend imputation, Part IVA anti-avoidance
-- **Centrelink**: Age Pension means testing (income test, assets test), deeming rates, gifting rules
-- **Regulatory**: AFSL obligations, Best Interest Duty (s961B), SOA/ROA requirements, FASEA Code of Ethics, ASIC oversight
-- **Estate Planning**: No estate/gift tax, super death benefits tax, BDBNs, testamentary trusts
-- **Insurance**: Life/TPD/IP inside and outside super, APRA reforms, own occupation restrictions
+1. **Analyse**: Run one or more analytical commands (`/financial-plan`, `/debt-recycling`, `/super-strategy`, etc.) to model strategies and produce calculation workings
+2. **Assemble**: Run `/strategy-request` to assemble the analysis into the SOA Summary Request template (Entities, Summary of Advice, Alternatives, Product Considerations, Projection Parameters, TMD, Notes)
+3. **Send**: Paste the SOA Summary Request into CRM for paraplanning
+
+The analytical skills produce the working papers. The strategy-request skill assembles them into the final CRM-ready output.
 
 ## Example Workflows
 
-Each example produces an adviser working paper that goes to paraplanning — not a client-facing document.
-
-### Financial Plan (with debt recycling)
+### Full Strategy Request (new client)
 ```
-/financial-plan Smith Family
+/financial-plan Client A
+# Run analysis first, then:
 
-# Produces paraplanning brief with:
-# - Cash flow projections (FY-aligned, full workings)
-# - Super contribution modelling (SG + salary sacrifice + NCC)
-# - Retirement projection with Age Pension means testing
-# - Debt recycling assessment (if mortgage exists)
-# - Scenario comparison table
-# - Basis for advice (calculations supporting each recommendation)
-# - Paraplanning notes (product research, disclosures, gaps to resolve)
+/strategy-request Client A
+# Assembles into SOA Summary Request with all mandatory sections
+# Output is CRM-ready tables
 ```
 
-### Debt Recycling
+### Debt Recycling Strategy Request
 ```
-/debt-recycling Smith Family
+/debt-recycling Client A
+# Produces: suitability assessment, loan restructure spec,
+# year-by-year projections, cost of carry analysis,
+# stress tests, exit strategy options
 
-# Produces paraplanning brief with:
-# - Suitability assessment
-# - Loan restructure specification (Split A / Split B)
-# - Year-by-year debt composition shift (every row calculable)
-# - After-tax cost of carry analysis (full workings)
-# - Franking credit integration at client's marginal rate
-# - Stress test results (rate rise, market crash, job loss)
-# - Exit strategy options with CGT modelling
-# - Basis for advice (legislative refs: TR 2000/2, s8-1 ITAA 1997)
+/strategy-request Client A
+# Assembles debt recycling actions into Summary of Advice,
+# dismissed alternatives, projection parameters, notes
 ```
 
-### Superannuation Strategy
+### Super Contribution Strategy
 ```
-/super-strategy Smith Family
+/super-strategy Client A
+# Produces: carry-forward analysis, bracket-targeting model,
+# salary sacrifice calculations, contribution timing
 
-# Produces paraplanning brief with:
-# - Contribution cap analysis and carry-forward availability
-# - Salary sacrifice modelling (tax saving workings)
-# - TTR strategy if approaching preservation age
-# - Pension phase transition and TBC tracking
-# - Insurance inside super review
-```
-
-### Centrelink Optimisation
-```
-/centrelink Jones Household
-
-# Produces paraplanning brief with:
-# - Income test calculation (deeming on financial assets)
-# - Assets test calculation (homeowner thresholds)
-# - Estimated Age Pension entitlement (full workings)
-# - Optimisation strategies with quantified pension increase
+/strategy-request Client A
+# Assembles into SOA Summary Request format
 ```
 
 ## Configuration
@@ -143,4 +123,13 @@ Copy the example config to personalise:
 cp .claude/wealth-management.local.md.example .claude/wealth-management.local.md
 ```
 
-Edit to include your name, AFSL details, preferred platforms, client list, and default assumptions.
+Edit to include your name, AFSL details, preferred platforms, referral partners, strategy request preferences (liquidity floor, surplus allocation, risk mapping), and default assumptions.
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `CONVENTIONS.md` | House style rules, SOA Summary Request format, global rules, calculation standards |
+| `skills/strategy-request/SKILL.md` | SOA Summary Request assembly process and template |
+| `skills/strategic-library/SKILL.md` | Reusable guidance, alternatives doctrine, case learnings |
+| `.claude/wealth-management.local.md` | Your personal preferences (gitignored) |

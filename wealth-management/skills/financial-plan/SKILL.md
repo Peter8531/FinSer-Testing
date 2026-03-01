@@ -167,50 +167,43 @@ Prioritised action items:
 7. Estate planning: BDBN review, will update, testamentary trust consideration
 8. Aged care planning (if relevant)
 
-### Step 8: Output — Paraplanning Brief
+### Step 8: Output — SOA Summary Request Input
 
-This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+This skill produces the **analytical working papers** that feed into the SOA Summary Request (assembled by the `strategy-request` skill). See [CONVENTIONS.md](../../CONVENTIONS.md) for house style rules.
 
-**1. Client Facts & Assumptions**
-- Client profile summary (demographics, income, assets, liabilities, goals)
-- All assumptions stated: growth rates, inflation, tax rates, contribution caps, pension drawdown rates
-- Fact find date and data source
+**Feeds into Summary of Advice:**
+- Numbered action items derived from the analysis (contribution strategy, debt strategy, insurance referral, estate referral, etc.)
+- Each item as a short, directive sentence
 
-**2. Strategy Analysis & Calculations**
+**Feeds into Projection Parameters:**
+- All modelling inputs (salary, super balance, cash, liquidity floor, savings, spending, risk profile, investment assumptions, insurance handling, contributions and timing, carry-forward)
+- Source-of-Truth table for each input (document name, date, section)
+
+**Feeds into Alternatives:**
+- Strategies considered and dismissed with rationale (e.g., non-super investing, single-year vs bracket-targeting contributions, full debt paydown vs debt recycling)
+
+**Feeds into Notes to AA or Paraplanning:**
+- Gap items to request from client
+- Risk profile mismatch disclosure (if applicable)
+- Beneficiary/estate concerns (non-tax dependants, lapsing BDBNs)
+- Insurance continuity requirements for any super rollovers
+
+**Calculation Workings (appendix):**
 - Cash flow projection with full workings (aligned to financial year)
 - Superannuation projection with contribution modelling (SG, salary sacrifice, NCC, carry-forward)
 - Age Pension modelling with income test and assets test calculations
-- Debt recycling projection (if applicable) — debt composition shift, portfolio growth, tax savings, cost of carry
+- Debt recycling projection (if applicable) with cost of carry analysis
 - Goal funding analysis with required savings calculations
-- Insurance needs analysis with cover gaps identified
-
-**3. Recommendations Summary**
-- Prioritised action items with rationale for each
-- Quantified benefit of each recommendation (dollar value, tax saving, probability improvement)
-- Risks and mitigations
-
-**4. Basis for Advice**
-- Key calculations supporting each recommendation — workings shown, not just results
 - Scenario comparison table (base case vs recommended vs stress tests)
 - Sensitivity analysis (returns, inflation, longevity, market downturn)
-- Legislative references (s961B, SIS Act caps, TR 2000/2 for debt recycling, etc.)
-
-**5. Paraplanning Notes**
-- Product research required (APL compliance, PDS references, platform selection)
-- Fee schedule to include in SOA
-- Risk profile confirmation — does the strategy match the documented risk profile?
-- Disclosure requirements
-- Information gaps to resolve before SOA can be finalised
-- Areas requiring adviser judgement or further client discussion
+- Legislative references supporting each recommendation
 
 ## Important Notes
 
-- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
-- All calculations must show full workings — paraplanning needs the basis, not just the conclusion
-- Be conservative with return assumptions — overestimating returns gives false confidence
-- Tax planning is as important as investment returns — model tax implications of every recommendation including franking credits, CGT discount, and super tax concessions
-- Super contribution timing is a major lever — model maximising concessional caps, carry-forward, and non-concessional strategies
-- Age Pension modelling is critical for most Australian retirees — even partial entitlement is valuable
-- Always stress-test the plan — a plan that only works in the base case is not a good plan
-- Compliance: the adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B Corporations Act) and FASEA Code of Ethics
-- Financial year runs 1 July to 30 June — all tax modelling must use this period
+- **This output is an adviser working paper. It is not a client-facing document.** The `strategy-request` skill assembles the final SOA Summary Request for paraplanning.
+- All calculations must show full workings. Paraplanning needs the basis, not just the conclusion.
+- All tables must follow house style: no bullets in cells, no em dashes, short directive sentences.
+- Be conservative with return assumptions.
+- Always stress-test the plan.
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B Corporations Act) and FASEA Code of Ethics.
+- Financial year runs 1 July to 30 June.

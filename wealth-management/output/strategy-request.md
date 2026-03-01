@@ -95,7 +95,7 @@
 
 Paraplanning to model detailed retirement projection using platform modelling tool. Key inputs above. Drawdown rate at $70,000 p.a.: 7.5% at 65, 6.2% at 67. Age pension eligibility at 67 supplements income.
 
-Downsizer contribution note: if the client sells or downsizes the $2,200,000 property at or after 55, she can contribute up to $300,000 into super as a downsizer contribution. Not counted against CC or NCC caps. Counted for Age Pension assets test from day one. Not modelled as a current recommendation but noted as a future option.
+Downsizer contribution note: if the client sells or downsizes the $2,200,000 property at or after 55, the client can contribute up to $300,000 into super as a downsizer contribution. Not counted against CC or NCC caps. Counted for Age Pension assets test from day one. Not modelled as a current recommendation but noted as a future option.
 
 ## TMD
 

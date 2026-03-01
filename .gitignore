@@ -49,5 +49,5 @@ MEMORY.md
 # Generated output (track sample outputs, ignore user-generated ones)
 */output/*
 !*/output/.gitkeep
-!wealth-management/output/billie-strategy-request.md
+!wealth-management/output/strategy-request.md
 !wealth-management/output/strategy-request.docx

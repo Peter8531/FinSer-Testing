@@ -22,6 +22,19 @@ The adviser and paraplanner remain responsible for ensuring all formal documenta
 - **Paraplanning briefs** with clear separation of actions, assumptions, and notes
 - **Internal documents** for associates and paraplanners only
 
+## Investment Philosophy
+
+All investment recommendations are delivered through the **First Financial Execution Framework**:
+
+1. **Investment Philosophy**: Dynamic portfolio management, high quality investments, risk management focus, diversification
+2. **Asset Allocation**: Driven by client objective, risk profile, and tactical overlay
+3. **Asset Selection**: Quality filter. Universe includes direct assets, ETFs, and managed funds, selected through the SMA
+4. **Implementation**: Timely implementation, real-time management
+
+Governance: Investment Committee, Research, Monitoring, Review. Risk management is continuous across all stages.
+
+All investment is via **Akambo SMA** (CA or MA) or **Collaborative Model** (effectively SMA). The SMA is the delivery vehicle for this framework. Do not recommend index funds or ETFs as standalone client holdings. See the `strategic-library` skill for full framework documentation and dismissal rationale.
+
 ## SOA Summary Request Format
 
 Every output must follow this mandatory section structure. See the `strategy-request` skill for the full template.

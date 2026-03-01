@@ -54,22 +54,21 @@ Home Loan Facility
 
 ### Step 3: Investment Selection
 
-Investments purchased with recycled debt must produce **assessable income** (to support the interest deduction):
+Investments purchased with recycled debt must produce **assessable income** (to support the interest deduction). All investment is delivered through the First Financial Execution Framework via Akambo SMA.
 
 | Vehicle | Income Type | Typical Yield | Franking | Suitability |
 |---------|-----------|---------------|----------|-------------|
-| Akambo SMA (CA) | Distributions | Target drawdown rate | Varies by allocation | Primary choice for clients needing income from recycled portfolio. Designed to meet specified drawdown requirement |
-| Akambo SMA (MA) | Distributions | Lower yield, growth focus | Varies by allocation | Primary choice for accumulation clients. Growth orientation with some income production to support deductibility |
-| Akambo Collaborative Model | Distributions | Varies | Varies by allocation | Effectively SMA. Use where collaborative structure suits the client |
-| Direct ASX blue chips (CBA, BHP, WES, WOW) | Dividends | 3.5-5.5% | Typically 100% franked | Acceptable but concentration risk. Prefer SMA for diversification and rebalancing |
-| Listed Investment Companies (AFIC, Argo, Milton) | Dividends | 3.5-4.5% | 100% franked typically | Acceptable but no automatic rebalancing. Prefer SMA |
+| Akambo SMA (CA) | Distributions | Target drawdown rate | Varies by allocation | Primary choice for clients needing income from recycled portfolio. Designed to meet specified drawdown requirement. Delivered through the execution framework with dynamic management and tactical overlay |
+| Akambo SMA (MA) | Distributions | Lower yield, growth focus | Varies by allocation | Primary choice for accumulation clients. Growth orientation with some income production to support deductibility. Quality-filtered asset selection with continuous risk management |
+| Akambo Collaborative Model | Distributions | Varies | Varies by allocation | Effectively SMA. Use where collaborative structure suits the client. Same execution framework applies |
 | Growth-only / no-income assets | None | 0% | N/A | Do not use. ATO may deny interest deduction if no reasonable expectation of income |
 
 **Recommended approach:**
-- Akambo SMA is the default for debt recycled funds, both inside and outside super
+- Akambo SMA is the default for debt recycled funds, both inside and outside super. This delivers the First Financial execution framework: dynamic portfolio management, quality asset selection, tactical overlay, and continuous risk management
 - SMA type selection: CA where the client needs the recycled portfolio to produce a specific drawdown rate, MA where the focus is capital growth with income as a secondary objective
 - The SMA must produce assessable income (distributions) to support the interest deduction on the investment loan. Confirm income production with Akambo
-- Avoid: speculative stocks, crypto, vacant land, index funds, or anything that does not produce regular assessable income
+- The SMA may hold direct assets, ETFs, or managed funds as building blocks within the portfolio. That is Akambo's implementation decision within the framework
+- Avoid: speculative stocks, crypto, vacant land, standalone index funds/ETFs, or anything that does not produce regular assessable income
 
 ### Step 4: Franking Credit Integration
 

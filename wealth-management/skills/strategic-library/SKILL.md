@@ -1,6 +1,27 @@
 # Strategic Library
 
-description: Reusable strategy design guidance, operational patterns, and case learnings that apply across all SOA Summary Requests. Contains alternatives doctrine, global prompt rules, common dismissals library, client communication stubs, and governance. This is a reference skill loaded automatically when assembling Strategy Requests. Triggers on "strategic library", "strategy rules", "alternatives doctrine", or "case learnings".
+description: Reusable strategy design guidance, operational patterns, and case learnings that apply across all SOA Summary Requests. Contains the First Financial investment execution framework, alternatives doctrine, global prompt rules, common dismissals library, client communication stubs, and governance. This is a reference skill loaded automatically when assembling Strategy Requests. Triggers on "strategic library", "strategy rules", "alternatives doctrine", "investment philosophy", or "case learnings".
+
+## Investment Execution Framework (First Financial)
+
+All investment recommendations are delivered through the First Financial execution framework. This is a four-stage process with continuous risk management and investment committee governance.
+
+| Stage | Elements |
+|-------|----------|
+| 1. Investment Philosophy | Dynamic portfolio management. High quality investments. Risk management focus. Diversification |
+| 2. Asset Allocation | Driven by client objective, risk profile, and tactical overlay. Not static strategic-only allocation |
+| 3. Asset Selection | Quality filter. Universe includes direct assets, ETFs, and managed funds. Selected and managed through the SMA framework |
+| 4. Implementation | Timely implementation. Real-time management |
+
+**Governance:** Investment Committee oversees the process. Research, Monitoring, and Review are continuous.
+
+**Risk Management:** Runs as a continuous layer across all four stages.
+
+**Practical application:**
+- All client investment is via Akambo SMA (CA or MA) or Collaborative Model. These are the delivery vehicles for the execution framework
+- The SMA may hold direct assets, ETFs, or managed funds as building blocks within the portfolio. That is Akambo's decision within the framework, not a client-level recommendation
+- Do not recommend index funds (VAS, IOZ, VGS, etc.) as standalone client holdings. The distinction is: we recommend the SMA (which implements the execution framework), not individual securities or ETFs
+- Asset allocation includes a tactical overlay, meaning the portfolio is actively managed and can be adjusted. This is a key differentiator from static index or strategic-only approaches
 
 ## Alternatives Doctrine
 
@@ -25,7 +46,7 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 | Self-managed (SMSF) | Full control, broader investment options | Balance below cost-effective threshold; administrative burden; trustee compliance obligations |
 | Full debt paydown before investing | Eliminates interest cost, simplest approach | Opportunity cost over the time horizon; debt recycling converts non-deductible to deductible and builds investment portfolio alongside paydown |
 | Direct shares vs SMA | Potential for stock-specific alpha | Concentration risk, higher transaction costs, no automatic rebalancing, more complex record-keeping |
-| Index funds / passive ETFs (VAS, IOZ, VGS, etc.) | Low cost, broad diversification, simplicity | Not aligned with investment philosophy. SMA provides managed portfolio with active oversight, tailored allocation (CA for drawdown, MA for growth), and integrated reporting. Index funds do not meet specific drawdown targets or allow portfolio customisation |
+| Index funds / passive ETFs (VAS, IOZ, VGS, etc.) | Low cost, broad diversification, simplicity | Not aligned with the First Financial execution framework. The framework delivers dynamic portfolio management with tactical overlay, quality-filtered asset selection, and continuous risk management via the SMA. Index funds provide static market exposure without active oversight, tactical adjustment, or drawdown targeting. The SMA may use ETFs as building blocks within the managed portfolio, but that is an implementation decision within the framework, not a client recommendation |
 | TTR pension strategy | Boosts super while maintaining income | Only effective from preservation age; earnings still taxed at 15% until full condition of release |
 
 ## Common Product Dismissals Library
@@ -106,6 +127,7 @@ Thanks, [Your Name]
 | 1 | 2026-02-18 | Initial creation from case learnings; added global rules, alternatives doctrine, operational patterns, and email stubs |
 | 2 | 2026-03-01 | Adapted from Copilot export into plugin format; integrated with CONVENTIONS.md and strategy-request skill |
 | 3 | 2026-03-01 | Akambo updated to reflect group alignment (shared licensee), not external referral. Added mandatory information-gathering pattern (TSB, carry-forward, NCC verification) |
+| 4 | 2026-03-01 | Added First Financial Investment Execution Framework (4-stage process with governance and continuous risk management). Updated index funds dismissal to reference framework |
 
 ## Important Notes
 

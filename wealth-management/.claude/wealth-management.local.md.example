@@ -41,24 +41,24 @@ strategy_request:
     trust_loan: "80%"  # Subject to accountant confirmation
     note: "80% loaned to Family Trust for investment"
 
-  # Risk profile mapping defaults
-  risk_mapping:
-    super: "Profile D (0% income, growth tilt)"
-    family_trust: "Profile C (6% income target)"
+  # Risk profile
+  # No default mapping. Risk profile is determined per client based on their
+  # circumstances, risk tolerance, and investment timeframe. Where risk score
+  # does not match selected portfolio, include rationale in the Strategy Request.
 
   # Stress test requirements
   mandatory_stress_tests:
     - "+3.0% interest rate stress test (modelling requirement)"
 
   # Insurance scope
-  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Refer to Akambo Insurance."
+  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Refer to Akambo."
 
   # Platform preference
   platform_note: "Paraplanning to determine lowest total cost. Default shortlist: Netwealth, HUB24."
 
-# Referral partners
+# Referral and SMA partners
 referrals:
-  insurance: "Akambo Insurance"
+  insurance_and_sma: "Akambo"  # Insurance referrals + SMA provider
   estate_planning: "Danaher Moulton"
   accountant: "[Accountant Name] @ [Firm]"
   mortgage_broker: "[Broker Name] @ [Firm]"
@@ -70,6 +70,7 @@ platforms:
 
 # Preferred investment vehicles
 preferred_vehicles:
+  sma: "Akambo SMA"  # Primary managed portfolio solution
   australian_equity: "VAS, IOZ, A200"
   international_equity: "VGS, IVV"
   fixed_income: "VAF, IAF"
@@ -109,7 +110,7 @@ typical_fee_range: "$3,300 - $6,600 p.a."
 # Notes
 
 ## Referral Contacts
-- Akambo Insurance: Insurance product advice (referred out of scope)
+- Akambo: Insurance product advice (referred out of scope) + SMA provider
 - Danaher Moulton: Estate Planning (wills, testamentary trusts, POA)
 - [Accountant Name] @ [Firm]: Trust structuring, loan documentation, tax returns
 - [Broker Name] @ [Firm]: Mortgage restructuring, debt recycling loan splits

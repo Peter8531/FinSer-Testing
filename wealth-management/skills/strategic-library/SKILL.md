@@ -33,7 +33,8 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 |-----------------|------------------------|-------------------|
 | Netwealth Super/Wrap | Competitive admin fees, strong SMA range, good adviser portal | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
 | HUB24 Super/Wrap | Strong platform features, SMA access, reporting | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
-| Morningstar Wealth | Broad investment menu, managed account capability | Higher total cost at this balance; limited SMA customisation vs preferred platform |
+| Akambo SMA | Managed portfolio solution, insurance integration | Primary SMA provider. Listed as recommendation or dismissed based on client needs and portfolio fit |
+| Morningstar Wealth | Broad investment menu, managed account capability | Higher total cost at this balance; limited SMA customisation vs Akambo |
 | Mason Stevens | Wide investment universe, alternative asset access | Higher minimum, more complex fee structure, less integrated reporting |
 | Industry fund (e.g., AustralianSuper, Aware) | Low admin fees, strong default options, insurance pricing | Limited adviser integration, no SMA access, limited portfolio customisation, no wrap reporting |
 | Retain legacy fund | Insurance continuity, no rollover paperwork | Higher total cost, limited investment menu, no integrated reporting; retain only if insurance continuity required |
@@ -61,7 +62,7 @@ Where an action must occur after SOA acceptance (e.g., sell-down of an existing 
 Where surplus cashflow is directed to a Family Trust for investment, specify the allocation split (e.g., retain 20% in personal offset; 80% loaned to Family Trust). Note: loan documentation handled by client's lawyer with accountant input.
 
 ### Risk Profile Mapping
-Where different entities have different risk profiles, specify the mapping explicitly (e.g., Super = Profile D, 0% income, growth tilt; Family Trust = Profile C, 6% income target). If risk score does not match selected profile, include a short rationale.
+Risk profile is determined per client based on their circumstances, risk tolerance, and investment timeframe. There are no default mappings. Where different entities have different risk profiles, specify the mapping explicitly per client. If risk score does not match selected portfolio, include a short rationale: risk required, timeframe, and ongoing invested through drawdown. Confirm client acceptance.
 
 ## Client Communication Stubs
 

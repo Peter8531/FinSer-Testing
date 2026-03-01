@@ -68,13 +68,28 @@ platforms:
   - "Netwealth"
   - "HUB24"
 
-# Preferred investment vehicles
-preferred_vehicles:
-  sma: "Akambo SMA"  # Primary managed portfolio solution
-  australian_equity: "VAS, IOZ, A200"
-  international_equity: "VGS, IVV"
-  fixed_income: "VAF, IAF"
-  property: "VAP"
+# Investment philosophy
+# No index funds. All investment is via Akambo SMA (or Collaborative Model,
+# which is effectively SMA). Assume SMA for both inside and outside super
+# unless directed otherwise.
+#
+# Two SMA types:
+#   CA (Circumstances and Attitude): designed to meet a specified drawdown
+#     requirement. Use for clients in or approaching drawdown phase.
+#   MA (Multi Asset): largely capital growth orientation. Use for clients
+#     in accumulation phase with long time horizon and no near-term drawdown.
+#
+# Default: MA for accumulation clients, CA for pre-retirement/retirement
+# clients with an income target. Adviser determines type based on client
+# circumstances.
+investment_philosophy:
+  approach: "Akambo SMA (or Collaborative Model)"
+  no_index: true  # Do not recommend index funds (VAS, IOZ, VGS, etc.)
+  sma_types:
+    ca: "Circumstances and Attitude. Designed to meet a drawdown requirement."
+    ma: "Multi Asset. Largely capital growth."
+  default_inside_super: "SMA"
+  default_outside_super: "SMA"
   cash: "Term deposits, HISA, offset"
 
 # Active clients (for session reminders)

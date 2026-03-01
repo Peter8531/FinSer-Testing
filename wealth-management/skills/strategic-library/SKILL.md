@@ -24,7 +24,8 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 | Retain legacy super fund | Continuity of insurance, familiarity | Higher fees, limited investment menu, no SMA access, no integrated reporting |
 | Self-managed (SMSF) | Full control, broader investment options | Balance below cost-effective threshold; administrative burden; trustee compliance obligations |
 | Full debt paydown before investing | Eliminates interest cost, simplest approach | Opportunity cost over the time horizon; debt recycling converts non-deductible to deductible and builds investment portfolio alongside paydown |
-| Direct shares vs ETF/SMA | Potential for stock-specific alpha | Concentration risk, higher transaction costs, no automatic rebalancing |
+| Direct shares vs SMA | Potential for stock-specific alpha | Concentration risk, higher transaction costs, no automatic rebalancing, more complex record-keeping |
+| Index funds / passive ETFs (VAS, IOZ, VGS, etc.) | Low cost, broad diversification, simplicity | Not aligned with investment philosophy. SMA provides managed portfolio with active oversight, tailored allocation (CA for drawdown, MA for growth), and integrated reporting. Index funds do not meet specific drawdown targets or allow portfolio customisation |
 | TTR pension strategy | Boosts super while maintaining income | Only effective from preservation age; earnings still taxed at 15% until full condition of release |
 
 ## Common Product Dismissals Library
@@ -33,7 +34,9 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 |-----------------|------------------------|-------------------|
 | Netwealth Super/Wrap | Competitive admin fees, strong SMA range, good adviser portal | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
 | HUB24 Super/Wrap | Strong platform features, SMA access, reporting | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
-| Akambo SMA | Managed portfolio solution, insurance integration | Primary SMA provider. Listed as recommendation or dismissed based on client needs and portfolio fit |
+| Akambo SMA (CA) | Circumstances and Attitude. Designed to meet a specified drawdown requirement. Suitable for pre-retirement and retirement clients with an income target | Primary SMA for drawdown-phase clients. Listed as recommendation or dismissed based on client circumstances and drawdown needs |
+| Akambo SMA (MA) | Multi Asset. Largely capital growth. Suitable for accumulation-phase clients with long time horizon | Primary SMA for accumulation-phase clients. Listed as recommendation or dismissed based on client circumstances and growth objectives |
+| Akambo Collaborative Model | Effectively SMA. Collaborative structure with Akambo | Listed as recommendation or dismissed based on client needs. Functionally equivalent to SMA for portfolio construction purposes |
 | Lonsec SMA | Closer to Akambo on pricing, established research house | Asset allocation can be slightly off-target and may shift at Lonsec's discretion without adviser input. Less control over allocation drift compared to Akambo |
 | Morningstar Wealth | Broad investment menu, managed account capability | Higher total cost at this balance; limited SMA customisation vs Akambo |
 | Mason Stevens | Wide investment universe, alternative asset access | Higher minimum, more complex fee structure, less integrated reporting |

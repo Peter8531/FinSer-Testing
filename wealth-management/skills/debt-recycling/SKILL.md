@@ -58,18 +58,18 @@ Investments purchased with recycled debt must produce **assessable income** (to 
 
 | Vehicle | Income Type | Typical Yield | Franking | Suitability |
 |---------|-----------|---------------|----------|-------------|
-| Broad AU equity ETFs (VAS, IOZ, A200) | Dividends | 3.5-4.5% | ~80-100% franked | Excellent — diversified, income-producing, franked |
-| Direct ASX blue chips (CBA, BHP, WES, WOW) | Dividends | 3.5-5.5% | Typically 100% franked | Good — but concentration risk |
-| Listed Investment Companies (AFIC, Argo, Milton) | Dividends | 3.5-4.5% | 100% franked typically | Good — dividend smoothing, fully franked |
-| International equity ETFs (VGS, IVV) | Dividends | 1-2% | Unfranked | Acceptable — lower yield but diversification benefit |
-| Managed funds (AU equity) | Distributions | Varies | Varies | Acceptable — watch for CGT distributions |
-| Growth-only / no-income assets | None | 0% | N/A | **Risky** — ATO may deny interest deduction if no income expectation |
+| Akambo SMA (CA) | Distributions | Target drawdown rate | Varies by allocation | Primary choice for clients needing income from recycled portfolio. Designed to meet specified drawdown requirement |
+| Akambo SMA (MA) | Distributions | Lower yield, growth focus | Varies by allocation | Primary choice for accumulation clients. Growth orientation with some income production to support deductibility |
+| Akambo Collaborative Model | Distributions | Varies | Varies by allocation | Effectively SMA. Use where collaborative structure suits the client |
+| Direct ASX blue chips (CBA, BHP, WES, WOW) | Dividends | 3.5-5.5% | Typically 100% franked | Acceptable but concentration risk. Prefer SMA for diversification and rebalancing |
+| Listed Investment Companies (AFIC, Argo, Milton) | Dividends | 3.5-4.5% | 100% franked typically | Acceptable but no automatic rebalancing. Prefer SMA |
+| Growth-only / no-income assets | None | 0% | N/A | Do not use. ATO may deny interest deduction if no reasonable expectation of income |
 
 **Recommended approach:**
-- Core holding: diversified Australian equity ETF (VAS or IOZ) — income-producing, franked, low cost
-- Satellite: international equity ETF (VGS) for diversification — lower yield but still income-producing
-- Suggested split: 60-70% Australian equity, 30-40% international equity
-- Avoid: speculative stocks, crypto, vacant land, or anything that doesn't produce regular assessable income
+- Akambo SMA is the default for debt recycled funds, both inside and outside super
+- SMA type selection: CA where the client needs the recycled portfolio to produce a specific drawdown rate, MA where the focus is capital growth with income as a secondary objective
+- The SMA must produce assessable income (distributions) to support the interest deduction on the investment loan. Confirm income production with Akambo
+- Avoid: speculative stocks, crypto, vacant land, index funds, or anything that does not produce regular assessable income
 
 ### Step 4: Franking Credit Integration
 
@@ -129,7 +129,7 @@ Each year (or more frequently if desired):
    → Funds transferred DIRECTLY to investment platform
 
 3. INVEST
-   → Purchase income-producing investments (e.g., VAS, IOZ)
+   → Purchase via Akambo SMA (CA or MA per client circumstances)
    → Keep purchase confirmation for records
 
 4. RECEIVE DIVIDENDS
@@ -163,7 +163,7 @@ Each year (or more frequently if desired):
 | **Market downturn** | Long time horizon (7+ years). Diversified portfolio. Don't panic-sell — the debt recycling benefit persists through market cycles. Margin call risk does NOT apply (this is a standard home loan, not a margin loan) |
 | **Interest rate rise** | Model a stress test at current rate + 2-3%. Ensure debt remains serviceable. Variable rate on deductible split means deduction increases with rates (partial natural hedge) |
 | **Job loss** | Emergency fund covers 6 months. Income protection insurance. Dividends from portfolio provide partial income. Can pause recycling at any time without unwinding |
-| **Investment produces no income** | Choose established, income-producing investments (ETFs, blue chips). Avoid speculative assets. ATO may deny deduction if no reasonable expectation of income |
+| **Investment produces no income** | Akambo SMA produces distributions by design. Confirm income production for the selected SMA type. ATO may deny deduction if no reasonable expectation of income |
 | **Loan structure error** | Get it right from the start — work with a mortgage broker who understands debt recycling. Do not commingle splits |
 | **ATO challenge** | Maintain meticulous records. Each borrowing → investment link must be documented. Interest deductibility is well-established in tax law (TR 2000/2) — the risk is in execution, not the concept |
 
@@ -228,15 +228,15 @@ This skill produces the **analytical working papers** that feed into the SOA Sum
 **Feeds into Alternatives:**
 - Full debt paydown before investing (dismiss: opportunity cost over time horizon)
 - Non-super investing without leverage (dismiss: loses deductible interest benefit)
-- Direct shares vs ETF/SMA for recycled portfolio
+- Direct shares vs SMA for recycled portfolio
 
 **Feeds into Product Considerations:**
 - Platform for investment portfolio (paraplanning to determine lowest total cost)
-- ETF/SMA selection rationale
+- SMA type selection rationale (CA vs MA)
 
 **Feeds into Notes to AA or Paraplanning:**
 - Loan restructure: confirm lender supports split facility with redraw
-- Investment platform: confirm APL compliance for recommended ETFs/funds
+- Investment platform: confirm APL compliance for recommended SMA
 - Risk profile: confirm leveraged strategy aligns with documented risk profile
 - Accountant/tax agent involvement for tax return preparation
 - Record-keeping checklist for client (drawdown to investment purchase trail)

@@ -51,14 +51,20 @@ strategy_request:
     - "+3.0% interest rate stress test (modelling requirement)"
 
   # Insurance scope
-  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Insurance product advice handled by Akambo (part of group)."
+  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Referred to Akambo Insurance (separate division within Janus Group)."
 
   # Platform preference
   platform_note: "Paraplanning to determine lowest total cost. Default shortlist: Netwealth, HUB24."
 
-# Partners
+# Group structure
+# Janus Group owns each entity directly:
+#   - First Financial (advice)
+#   - Akambo (SMA / investment management)
+#   - Akambo Insurance (insurance product advice — separate division)
+# Shared licensee alignment through Janus Group ownership.
 partners:
-  akambo: "Akambo"  # Part of the group (shared licensee). SMA provider + insurance product advice
+  akambo_sma: "Akambo"  # Janus Group entity. SMA provider (CA, MA, Collaborative)
+  akambo_insurance: "Akambo Insurance"  # Janus Group entity (separate division). Insurance product advice — referral
   estate_planning: "Danaher Moulton"  # External referral
   accountant: "[Accountant Name] @ [Firm]"  # External referral
   mortgage_broker: "[Broker Name] @ [Firm]"  # External referral
@@ -81,6 +87,9 @@ platforms:
 #
 # Governance: Investment Committee, Research, Monitoring, Review
 # Continuous: Risk management runs across all stages
+#
+# Janus Group owns First Financial and Akambo directly. Shared licensee
+# alignment through group ownership.
 #
 # All investment is via Akambo SMA (or Collaborative Model, which is
 # effectively SMA). Assume SMA for both inside and outside super unless
@@ -148,7 +157,8 @@ typical_fee_range: "$3,300 - $6,600 p.a."
 # Notes
 
 ## Partner and Referral Contacts
-- Akambo: Part of the group (shared licensee). SMA provider (CA and MA) + insurance product advice. Aligned on market views
+- Akambo (SMA): Janus Group entity. SMA provider (CA, MA, Collaborative). Aligned on market views through group ownership
+- Akambo Insurance: Janus Group entity (separate division). Insurance product advice — referral within the group
 - Danaher Moulton: Estate Planning (wills, testamentary trusts, POA) — external referral
 - [Accountant Name] @ [Firm]: Trust structuring, loan documentation, tax returns — external referral
 - [Broker Name] @ [Firm]: Mortgage restructuring, debt recycling loan splits — external referral

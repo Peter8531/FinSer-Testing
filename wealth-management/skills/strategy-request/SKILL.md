@@ -80,7 +80,7 @@ Typical action items include:
 - Investment strategy (risk profile, asset allocation, SMA mapping)
 - Debt strategy (PPR paydown, refinance, debt recycling structure)
 - Trust lending (amount, purpose, accountant/lawyer involvement)
-- Insurance scope note (product advice handled by Akambo, part of group; model premium drag only)
+- Insurance scope note (product advice referred to Akambo Insurance, separate Janus Group division; model premium drag only)
 - Estate planning referral (BDBN, will update, testamentary trust)
 - Post-SOA actions (sell-down, transfers, implementation steps after acceptance)
 

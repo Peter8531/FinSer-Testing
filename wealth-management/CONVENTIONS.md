@@ -132,7 +132,7 @@ If risk score does not equal selected portfolio (e.g., B scored, C selected), in
 Capture current nomination types and percentages. Where nominees may be non-tax dependants, add short plain-English tax implication note and "review at retirement".
 
 ### Insurance Scope Discipline
-Insurance product advice is out of scope by default. Model premium cashflow drag only. Insurance product advice is handled by Akambo (part of the group, shared licensee). If retaining an existing fund for cover continuity, specify cash amount to retain and purpose.
+Insurance product advice is out of scope by default. Model premium cashflow drag only. Insurance product advice is referred to Akambo Insurance (separate division within Janus Group). If retaining an existing fund for cover continuity, specify cash amount to retain and purpose.
 
 ### Alternatives Doctrine
 Alternatives must be viable strategy or product options and must include a clear dismissal (cohesive single-cell entry per alternative). The recommended platform/portfolio is never listed as an alternative. Keep Alternatives (Strategies) and Alternative Product Considerations as separate sections.

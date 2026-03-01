@@ -17,11 +17,14 @@ All investment recommendations are delivered through the First Financial executi
 
 **Risk Management:** Runs as a continuous layer across all four stages.
 
+**Group structure:** Janus Group owns each entity directly: First Financial (advice), Akambo (SMA / investment management), Akambo Insurance (insurance product advice, separate division). Shared licensee alignment through Janus Group ownership.
+
 **Practical application:**
-- All client investment is via Akambo SMA (CA or MA) or Collaborative Model. These are the delivery vehicles for the execution framework
+- All client investment is via Akambo SMA (CA or MA) or Collaborative Model. These are the delivery vehicles for the execution framework. Akambo is a Janus Group entity
 - The SMA may hold direct assets, ETFs, or managed funds as building blocks within the portfolio. That is Akambo's decision within the framework, not a client-level recommendation
 - Do not recommend index funds (VAS, IOZ, VGS, etc.) as standalone client holdings. The distinction is: we recommend the SMA (which implements the execution framework), not individual securities or ETFs
 - Asset allocation includes a tactical overlay, meaning the portfolio is actively managed and can be adjusted. This is a key differentiator from static index or strategic-only approaches
+- Insurance product advice is referred to Akambo Insurance (separate division within Janus Group). This is a referral, not in-house advice
 
 ## Alternatives Doctrine
 
@@ -55,9 +58,9 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 |-----------------|------------------------|-------------------|
 | Netwealth Super/Wrap | Competitive admin fees, strong SMA range, good adviser portal | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
 | HUB24 Super/Wrap | Strong platform features, SMA access, reporting | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
-| Akambo SMA (CA) | Part of the group (shared licensee). Circumstances and Attitude. Designed to meet a specified drawdown requirement. Suitable for pre-retirement and retirement clients with an income target | Primary SMA for drawdown-phase clients. Listed as recommendation or dismissed based on client circumstances and drawdown needs |
-| Akambo SMA (MA) | Part of the group (shared licensee). Multi Asset. Largely capital growth. Suitable for accumulation-phase clients with long time horizon | Primary SMA for accumulation-phase clients. Listed as recommendation or dismissed based on client circumstances and growth objectives |
-| Akambo Collaborative Model | Part of the group (shared licensee). Effectively SMA. Collaborative structure with Akambo | Listed as recommendation or dismissed based on client needs. Functionally equivalent to SMA for portfolio construction purposes |
+| Akambo SMA (CA) | Janus Group entity. Circumstances and Attitude. Designed to meet a specified drawdown requirement. Suitable for pre-retirement and retirement clients with an income target | Primary SMA for drawdown-phase clients. Listed as recommendation or dismissed based on client circumstances and drawdown needs |
+| Akambo SMA (MA) | Janus Group entity. Multi Asset. Largely capital growth. Suitable for accumulation-phase clients with long time horizon | Primary SMA for accumulation-phase clients. Listed as recommendation or dismissed based on client circumstances and growth objectives |
+| Akambo Collaborative Model | Janus Group entity. Effectively SMA. Collaborative structure with Akambo | Listed as recommendation or dismissed based on client needs. Functionally equivalent to SMA for portfolio construction purposes |
 | Lonsec SMA | Closer to Akambo on pricing, established research house | Asset allocation can be slightly off-target and may shift at Lonsec's discretion without adviser input. Less control over allocation drift compared to Akambo |
 | Morningstar Wealth | Broad investment menu, managed account capability | Higher total cost at this balance; limited SMA customisation vs Akambo |
 | Mason Stevens | Wide investment universe, alternative asset access | Higher minimum, more complex fee structure, less integrated reporting |
@@ -128,6 +131,7 @@ Thanks, [Your Name]
 | 2 | 2026-03-01 | Adapted from Copilot export into plugin format; integrated with CONVENTIONS.md and strategy-request skill |
 | 3 | 2026-03-01 | Akambo updated to reflect group alignment (shared licensee), not external referral. Added mandatory information-gathering pattern (TSB, carry-forward, NCC verification) |
 | 4 | 2026-03-01 | Added First Financial Investment Execution Framework (4-stage process with governance and continuous risk management). Updated index funds dismissal to reference framework |
+| 5 | 2026-03-01 | Clarified Janus Group structure: Janus owns First Financial, Akambo (SMA), and Akambo Insurance (separate division) directly. Insurance is a referral to Akambo Insurance, not in-house |
 
 ## Important Notes
 

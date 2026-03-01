@@ -58,17 +58,21 @@ Investments purchased with recycled debt must produce **assessable income** (to 
 
 | Vehicle | Income Type | Typical Yield | Franking | Suitability |
 |---------|-----------|---------------|----------|-------------|
-| Akambo SMA (CA) | Distributions | Target drawdown rate | Varies by allocation | Primary choice for clients needing income from recycled portfolio. Designed to meet specified drawdown requirement. Delivered through the execution framework with dynamic management and tactical overlay |
-| Akambo SMA (MA) | Distributions | Lower yield, growth focus | Varies by allocation | Primary choice for accumulation clients. Growth orientation with some income production to support deductibility. Quality-filtered asset selection with continuous risk management |
+| Akambo SMA (MA) for income-focused debt recycling | Distributions from income-biased allocation | Higher yield from defensive allocation (Cash + Fixed Interest + equity distributions) | Varies by allocation. Higher Australian equity allocation increases franking | Primary choice where the recycled portfolio must produce income to service the investment loan. MA-A (75% income) or MA-B (55% income) in early stages when LVR is high. Transition to MA-C or MA-D as debt reduces and income obligation drops. See `sma-portfolio-mapping` skill for staged transition guidance |
+| Akambo SMA (CA) for growth-focused debt recycling | Distributions | Target drawdown rate | Varies by allocation | Use where client services the investment loan from salary or other cashflow (not from the recycled portfolio). CA0 or CA2 for maximum growth. Portfolio income is a bonus, not a loan-servicing requirement. Designed to meet specified drawdown requirement. Delivered through the execution framework with dynamic management and tactical overlay |
+| Akambo SMA (MA-D or MA-E) for growth-focused debt recycling | Distributions | Lower yield, growth focus | Varies by allocation | Use where client services the loan externally and wants maximum growth from the recycled portfolio. High equity allocation (75-90%) with long time horizon. Some income production supports deductibility |
 | Akambo Collaborative Model | Distributions | Varies | Varies by allocation | Effectively SMA. Use where collaborative structure suits the client. Same execution framework applies |
 | Growth-only / no-income assets | None | 0% | N/A | Do not use. ATO may deny interest deduction if no reasonable expectation of income |
 
 **Recommended approach:**
 - Akambo SMA is the default for debt recycled funds, both inside and outside super. This delivers the First Financial execution framework: dynamic portfolio management, quality asset selection, tactical overlay, and continuous risk management
-- SMA type selection: CA where the client needs the recycled portfolio to produce a specific drawdown rate, MA where the focus is capital growth with income as a secondary objective
-- The SMA must produce assessable income (distributions) to support the interest deduction on the investment loan. Confirm income production with Akambo
+- SMA type selection depends on how the investment loan is serviced:
+  - **Income-focused debt recycling (MA range):** Where the recycled portfolio must produce income to service the investment loan, use the MA range. MA-A (25/75 growth/income) or MA-B (45/55) in early stages when LVR is high and income certainty is critical. Transition to MA-C (60/40) or MA-D (75/25) as debt reduces and the income servicing obligation drops. The income tilt ensures the portfolio generates sufficient distributions to cover loan repayments, making the strategy self-evident for ATO purposes
+  - **Growth-focused debt recycling (CA range):** Where the client services the loan from salary or other cashflow, use CA0 or CA2 for maximum growth. The portfolio produces some income (distributions) but the primary focus is capital growth. Income is a bonus, not a loan-servicing requirement
+- The SMA must produce assessable income (distributions) to support the interest deduction on the investment loan. Confirm income production with Akambo. Run a serviceability check: compare expected distribution yield against after-tax interest cost (see `sma-portfolio-mapping` skill)
 - The SMA may hold direct assets, ETFs, or managed funds as building blocks within the portfolio. That is Akambo's implementation decision within the framework
 - Avoid: speculative stocks, crypto, vacant land, standalone index funds/ETFs, or anything that does not produce regular assessable income
+- See the `sma-portfolio-mapping` skill for the full debt recycling SMA selection decision tree, staged transition guidance, and serviceability check template
 
 ### Step 4: Franking Credit Integration
 
@@ -162,7 +166,7 @@ Each year (or more frequently if desired):
 | **Market downturn** | Long time horizon (7+ years). Diversified portfolio. Don't panic-sell — the debt recycling benefit persists through market cycles. Margin call risk does NOT apply (this is a standard home loan, not a margin loan) |
 | **Interest rate rise** | Model a stress test at current rate + 2-3%. Ensure debt remains serviceable. Variable rate on deductible split means deduction increases with rates (partial natural hedge) |
 | **Job loss** | Emergency fund covers 6 months. Income protection insurance. Dividends from portfolio provide partial income. Can pause recycling at any time without unwinding |
-| **Investment produces no income** | Akambo SMA produces distributions by design. Confirm income production for the selected SMA type. ATO may deny deduction if no reasonable expectation of income |
+| **Investment produces no income** | Akambo SMA produces distributions by design. For income-focused debt recycling, the MA range (MA-A or MA-B) has a high income allocation (55-75%) specifically to ensure income production. Confirm income production for the selected SMA type with Akambo. ATO may deny deduction if no reasonable expectation of income |
 | **Loan structure error** | Get it right from the start — work with a mortgage broker who understands debt recycling. Do not commingle splits |
 | **ATO challenge** | Maintain meticulous records. Each borrowing → investment link must be documented. Interest deductibility is well-established in tax law (TR 2000/2) — the risk is in execution, not the concept |
 

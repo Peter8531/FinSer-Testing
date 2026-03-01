@@ -34,6 +34,7 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 | Netwealth Super/Wrap | Competitive admin fees, strong SMA range, good adviser portal | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
 | HUB24 Super/Wrap | Strong platform features, SMA access, reporting | Paraplanning to confirm; listed as recommendation or dismissed based on total cost comparison |
 | Akambo SMA | Managed portfolio solution, insurance integration | Primary SMA provider. Listed as recommendation or dismissed based on client needs and portfolio fit |
+| Lonsec SMA | Closer to Akambo on pricing, established research house | Asset allocation can be slightly off-target and may shift at Lonsec's discretion without adviser input. Less control over allocation drift compared to Akambo |
 | Morningstar Wealth | Broad investment menu, managed account capability | Higher total cost at this balance; limited SMA customisation vs Akambo |
 | Mason Stevens | Wide investment universe, alternative asset access | Higher minimum, more complex fee structure, less integrated reporting |
 | Industry fund (e.g., AustralianSuper, Aware) | Low admin fees, strong default options, insurance pricing | Limited adviser integration, no SMA access, limited portfolio customisation, no wrap reporting |

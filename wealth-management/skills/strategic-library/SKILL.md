@@ -64,7 +64,7 @@ Adapt per case. Do not use these verbatim without tailoring to client facts.
 | Lonsec SMA | Closer to Akambo on pricing, established research house | Asset allocation can be slightly off-target and may shift at Lonsec's discretion without adviser input. Less control over allocation drift compared to Akambo |
 | Morningstar Wealth | Broad investment menu, managed account capability | Higher total cost at this balance; limited SMA customisation vs Akambo |
 | Mason Stevens | Wide investment universe, alternative asset access | Higher minimum, more complex fee structure, less integrated reporting |
-| Industry fund (e.g., AustralianSuper, Aware) | Low admin fees, strong default options, insurance pricing | Limited adviser integration, no SMA access, limited portfolio customisation, no wrap reporting |
+| Industry fund (e.g., AustralianSuper, Aware) | Low admin fees, strong default options, insurance pricing | Pooled trust structure. Client holds units in a commingled pool, not beneficial ownership of underlying assets. No control over which parcels are sold, CGT timing, or tax lot selection. Embedded capital gains in the pool are shared across all unitholders. Rebalancing and asset selection occur at fund level with no adviser visibility or input. Limited adviser integration, no SMA access, no wrap reporting. Platform SMA provides beneficial ownership in the client's name, full tax lot control, specialist-managed exposures via Akambo, and real-time transparency |
 | Retain legacy fund | Insurance continuity, no rollover paperwork | Higher total cost, limited investment menu, no integrated reporting; retain only if insurance continuity required |
 
 ## Operational Patterns (Case Learnings)
@@ -94,6 +94,9 @@ Where an action must occur after SOA acceptance (e.g., sell-down of an existing 
 
 ### Surplus Allocation
 Where surplus cashflow is directed to a Family Trust for investment, specify the allocation split (e.g., retain 20% in personal offset; 80% loaned to Family Trust). Note: loan documentation handled by client's lawyer with accountant input.
+
+### Pooled Trust vs Beneficial Ownership
+Industry super funds operate as pooled trusts. The client holds units in a commingled pool and has no control over the underlying assets. Key consequences: (1) no tax lot control — the fund decides which parcels to sell and when, so the client cannot manage CGT outcomes; (2) embedded capital gains are socialised across all unitholders — new members inherit existing gains and exiting members may crystallise gains they did not earn; (3) rebalancing and asset selection occur at fund level with no adviser visibility or input; (4) income distributions (including franking credit allocation) are determined at pool level, not per client. Platform SMA via Akambo provides beneficial ownership of assets in the client's (or super entity's) name. The adviser and Akambo control which parcels are sold and when, targeting specific tax lots for optimal CGT outcomes. Exposures are managed by specialists within the First Financial execution framework with full transparency and real-time reporting. This structural distinction supports the rollover recommendation wherever the client is moving from an industry fund to a platform SMA.
 
 ### Risk Profile Mapping
 Risk profile is determined per client based on their circumstances, risk tolerance, and investment timeframe. There are no default mappings. Where different entities have different risk profiles, specify the mapping explicitly per client. If risk score does not match selected portfolio, include a short rationale: risk required, timeframe, and ongoing invested through drawdown. Confirm client acceptance.
@@ -135,6 +138,7 @@ Thanks, [Your Name]
 | 3 | 2026-03-01 | Akambo updated to reflect group alignment (shared licensee), not external referral. Added mandatory information-gathering pattern (TSB, carry-forward, NCC verification) |
 | 4 | 2026-03-01 | Added First Financial Investment Execution Framework (4-stage process with governance and continuous risk management). Updated index funds dismissal to reference framework |
 | 5 | 2026-03-01 | Clarified Janus Group structure: Janus owns First Financial, Akambo (SMA), and Akambo Insurance (separate division) directly. Insurance is a referral to Akambo Insurance, not in-house |
+| 6 | 2026-03-01 | Added pooled trust vs beneficial ownership distinction as operational pattern and expanded industry fund product dismissal. Platform SMA provides beneficial ownership, tax lot control, and specialist-managed exposures vs pooled trust structure of industry funds |
 
 ## Important Notes
 

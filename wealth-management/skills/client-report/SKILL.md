@@ -1,6 +1,6 @@
 # Client Report
 
-description: Generate professional client-facing performance reports with portfolio returns, allocation breakdowns, franking credit summaries, and market commentary. Suitable for annual or ad-hoc distribution. Triggers on "client report", "performance report", "annual report for [client]", "generate reports", or "client statement".
+description: Produce an adviser working paper (paraplanning brief) for client performance reports with portfolio returns, allocation breakdowns, franking credit summaries, and market commentary. Suitable for annual or ad-hoc distribution. Output goes to paraplanning for formal SOA/ROA drafting. Triggers on "client report", "performance report", "annual report for [client]", "generate reports", or "client statement".
 
 ## Workflow
 
@@ -101,26 +101,41 @@ Brief market summary tailored to the client's level of sophistication:
 - Next review date
 - Ongoing Fee Arrangement renewal date
 
-### Step 8: Output
+### Step 8: Output — Paraplanning Brief
 
-- PDF report (8-12 pages) with firm branding and AFSL details
+This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+
+**1. Client Facts & Assumptions**
+- Client name, household, reporting period, accounts included
+- Benchmark selection (from SOA/IPS)
+- Firm branding requirements (logo, AFSL number, disclaimers)
+
+**2. Strategy Analysis & Calculations**
+- Performance summary tables (household and by account, QTD/FYTD/1-Year/3-Year/5-Year/ITD)
+- Income summary including dividends, franking credits, interest, trust distributions, super pension income
+- Allocation overview with current vs. benchmark percentages
+- Holdings detail with yields, franked yields, and CGT discount eligibility
+- Activity summary (trades, contributions, drawdowns, fees, distributions)
+
+**3. Recommendations Summary**
+- Progress toward financial goals
+- Any changes to recommendations or strategy
+- Upcoming action items and next review date
+
+**4. Basis for Advice**
+- Market commentary tailored to client sophistication level
+- Rationale for current positioning and any recommended changes
+- Planning notes: contribution cap usage, Centrelink status, BDBN expiry dates, OFA renewal date
+
+**5. Paraplanning Notes**
+- PDF report (8-12 pages) with firm branding and AFSL details for paraplanning to finalise
 - Word document for customisation
 - Excel data appendix (optional)
-
-**Report Structure:**
-1. Cover page (client name, period, firm logo, AFSL number)
-2. Executive summary (1 page)
-3. Performance summary (1-2 pages)
-4. Income summary including franking credits (1 page)
-5. Allocation overview with charts (1 page)
-6. Holdings detail (1-2 pages)
-7. Market commentary (1 page)
-8. Activity summary (1 page)
-9. Planning notes (1 page)
-10. Disclosures, disclaimers, and AFSL general advice warning (1 page)
+- Flag any areas requiring compliance review before client distribution
 
 ## Important Notes
 
+- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
 - Performance must be calculated net of fees unless client/compliance requires gross
 - Always include appropriate disclaimers and AFSL general advice warning
 - Include franking credits in income summaries — they are a material component of Australian equity returns

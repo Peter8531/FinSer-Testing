@@ -1,7 +1,7 @@
 {
   "name": "wealth-management",
   "version": "0.2.0-au",
-  "description": "Wealth management tools for Australian financial advisers: client reviews, financial planning, superannuation strategy, Centrelink optimisation, franking credit strategy, portfolio analysis, and client reporting",
+  "description": "Adviser working paper and paraplanning brief generator for Australian wealth management. Produces strategy analysis, calculations with full workings, and recommendation summaries for paraplanning to draft formal SOA/ROA documentation. Covers financial planning, superannuation, debt recycling, Centrelink, franking credits, portfolio management, and client reporting.",
   "author": {
     "name": "Anthropic FSI"
   }

@@ -1,6 +1,6 @@
 # Capital Loss Harvesting
 
-description: Identify capital loss harvesting opportunities across taxable investment accounts. Finds positions with unrealised losses, suggests replacement securities, and manages Part IVA anti-avoidance compliance. Triggers on "capital loss harvesting", "tax-loss harvesting", "TLH", "harvest losses", "tax losses", "unrealised losses", or "end of financial year tax planning".
+description: Produce an adviser working paper (paraplanning brief) for identifying capital loss harvesting opportunities across taxable investment accounts. Finds positions with unrealised losses, suggests replacement securities, and manages Part IVA anti-avoidance compliance. Output goes to paraplanning for formal SOA/ROA drafting. Triggers on "capital loss harvesting", "tax-loss harvesting", "TLH", "harvest losses", "tax losses", "unrealised losses", or "end of financial year tax planning".
 
 ## Workflow
 
@@ -115,16 +115,38 @@ Before selling Australian equities, check:
 - Update CGT schedule for the tax return
 - Advise accountant/tax agent of harvested losses for inclusion in the tax return
 
-### Step 8: Output
+### Step 8: Output — Paraplanning Brief
 
-- Harvest opportunity list (Excel)
-- Trade execution sheet with Part IVA rationale for each trade
-- Tax savings estimate summary
-- Replacement security rationale
+This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+
+**1. Client Facts & Assumptions**
+- Client tax position (marginal rate, account types)
+- Current portfolio holdings with unrealised gains/losses
+- Capital gains budget (realised gains YTD, carry-forward losses)
+
+**2. Strategy Analysis & Calculations**
+- Harvest opportunity list with prioritisation
+- Tax savings estimate at client's marginal rate
+- Part IVA risk assessment for each trade
+- Franking credit impact analysis (if selling Australian equities)
+
+**3. Recommendations Summary**
+- Recommended trades with replacement securities
 - Updated portfolio allocation (before/after)
+- Net tax savings summary
+
+**4. Basis for Advice**
+- Non-tax investment rationale for each trade (rebalancing, cost reduction, diversification improvement)
+- Trade-offs considered (cost base step-down, transaction costs, tracking error)
+
+**5. Paraplanning Notes**
+- Part IVA compliance documentation for each trade
+- CGT schedule updates required for tax return
+- Items needing client or accountant confirmation before SOA/ROA drafting
 
 ## Important Notes
 
+- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
 - Capital losses can ONLY offset capital gains — they cannot reduce ordinary income (salary, interest, dividends)
 - There is no wash sale rule in Australia, but Part IVA anti-avoidance provisions can deny tax benefits for schemes with a dominant tax purpose
 - Always document a genuine, non-tax investment rationale for each trade
@@ -136,3 +158,4 @@ Before selling Australian equities, check:
 - Capital losses cannot offset franking credit refunds
 - Not all losses are worth harvesting — brokerage costs, bid-ask spreads, and tracking error have real costs
 - Keep detailed records for the CGT schedule in the tax return
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics

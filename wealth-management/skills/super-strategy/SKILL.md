@@ -1,6 +1,6 @@
 # Superannuation Strategy
 
-description: Optimise superannuation contributions, investment strategy, and transition planning. Covers concessional and non-concessional contributions, carry-forward rules, salary sacrifice, spouse contributions, TTR strategies, pension phase transition, transfer balance cap management, and SMSF considerations. Triggers on "super strategy", "superannuation", "salary sacrifice", "super contributions", "transition to retirement", "TTR", "pension phase", "transfer balance cap", "downsizer contribution", or "SMSF".
+description: Produce an adviser working paper (paraplanning brief) for superannuation strategy optimisation covering contributions, investment strategy, and transition planning. Covers concessional and non-concessional contributions, carry-forward rules, salary sacrifice, spouse contributions, TTR strategies, pension phase transition, transfer balance cap management, and SMSF considerations. Output goes to paraplanning for formal SOA/ROA drafting. Triggers on "super strategy", "superannuation", "salary sacrifice", "super contributions", "transition to retirement", "TTR", "pension phase", "transfer balance cap", "downsizer contribution", or "SMSF".
 
 ## Workflow
 
@@ -153,18 +153,41 @@ If the client has multiple super accounts:
 - Employer contribution direction (update with new fund details)
 - Lodge rollover via myGov/ATO or fund-to-fund transfer form
 
-### Step 7: Output
+### Step 7: Output — Paraplanning Brief
 
+This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+
+**1. Client Facts & Assumptions**
+- Client name, household members, employment status, preservation age
+- Super fund(s): fund names, balances, investment options, fees, insurance inside super
+- Contribution history (concessional and non-concessional this FY and prior years)
+- Unused concessional cap carry-forward, total super balance (prior 30 June)
+
+**2. Strategy Analysis & Calculations**
+- Contribution optimisation tables (concessional cap usage, carry-forward, NCC cap and bring-forward)
+- TTR modelling (salary sacrifice vs TTR income stream, net benefit per year, projected additional super at retirement)
+- Pension phase transition plan (transfer balance cap tracking, minimum drawdown schedule)
+- Fund comparison (fees, insurance, performance) and consolidation analysis
+
+**3. Recommendations Summary**
 - Super strategy summary (contribution plan, investment recommendation, insurance review)
 - Contribution schedule for the financial year
-- TTR modelling (if applicable)
-- Pension phase transition plan (if applicable)
-- TBC tracking
-- Fund comparison and consolidation recommendation
-- Action items with dates
+- Fund consolidation recommendation (if applicable)
+- Action items with responsible party and dates
+
+**4. Basis for Advice**
+- Rationale linking each recommendation to client goals, risk profile, and tax position
+- Decision frameworks applied (marginal rate vs 15% contributions tax, Division 293 impact, NCC eligibility)
+- Getting started plan: pension phase transition timeline, rollover process, employer SG redirection
+
+**5. Paraplanning Notes**
+- One-page super strategy summary for paraplanning to expand into formal SOA/ROA
+- Flag any areas requiring further research or compliance review (e.g., defined benefit components, SMSF compliance)
+- Key dates: contribution deadlines (30 June), BDBN expiry, insurance review, OFA renewal
 
 ## Important Notes
 
+- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
 - Contribution caps reset each 1 July — plan contributions before 30 June each year
 - Carry-forward unused concessional cap is only available if total super balance was <$500,000 at the prior 30 June
 - Non-concessional contributions are blocked entirely if total super balance ≥$1.9M
@@ -173,5 +196,5 @@ If the client has multiple super accounts:
 - Downsizer contributions are counted in the Centrelink assets test — model the Age Pension impact before contributing
 - SMSF members are trustees and personally liable for compliance — ensure investment strategy, audit, and sole purpose test are current
 - Insurance inside super erodes the balance — review regularly to ensure the cover is still needed and cost-effective
-- All super advice must comply with Best Interest Duty and be documented in an SOA
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics
 - Personal deductible contributions: must lodge a notice of intent with the fund and receive acknowledgement BEFORE lodging the tax return or rolling over

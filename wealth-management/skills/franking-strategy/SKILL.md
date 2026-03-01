@@ -1,6 +1,6 @@
 # Franking Credit Strategy
 
-description: Optimise portfolio construction and income planning around Australia's dividend imputation system. Covers franking credit calculation, grossed-up yields, portfolio tilts for income investors, and refund strategies for low-tax and pension phase investors. Triggers on "franking credits", "dividend imputation", "franked dividends", "grossed-up yield", "imputation credits", or "franking strategy".
+description: Produce an adviser working paper (paraplanning brief) for optimising portfolio construction and income planning around Australia's dividend imputation system. Covers franking credit calculation, grossed-up yields, portfolio tilts for income investors, and refund strategies for low-tax and pension phase investors. Output goes to paraplanning for formal SOA/ROA drafting. Triggers on "franking credits", "dividend imputation", "franked dividends", "grossed-up yield", "imputation credits", or "franking strategy".
 
 ## Workflow
 
@@ -118,18 +118,37 @@ For income-focused clients (especially retirees), model the annual income includ
 - **Holding period rule**: Ensure shares are held "at risk" for 45 days to qualify for franking credits. Trading around ex-dividend dates purely for franking may fail this test
 - **Capital losses cannot offset franking credits**: If a client has net capital losses, they cannot use them to reduce tax on franked dividends. Franking credits only offset tax on the grossed-up dividend
 
-### Step 7: Output
+### Step 7: Output — Paraplanning Brief
 
+This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+
+**1. Client Facts & Assumptions**
+- Client tax position (marginal rate, account types, super phase)
+- Current portfolio holdings with franking profile
+
+**2. Strategy Analysis & Calculations**
 - Franking credit audit of current portfolio
 - Grossed-up yield analysis for each holding
 - After-tax income comparison (current vs proposed allocation)
-- Recommended portfolio adjustments (with franking impact)
-- Annual income and refund projection
 - Holding period compliance check
 - Risk assessment (concentration, sector, policy)
 
+**3. Recommendations Summary**
+- Recommended portfolio adjustments (with franking impact)
+- Annual income and refund projection
+
+**4. Basis for Advice**
+- Rationale for portfolio tilt or restructure (why the proposed allocation better serves the client's income and tax position)
+- Trade-offs considered (concentration risk, diversification, total return vs income)
+
+**5. Paraplanning Notes**
+- Current franking credit rates and company tax rates used
+- Any holdings requiring holding period rule verification
+- Items needing client confirmation before SOA/ROA drafting
+
 ## Important Notes
 
+- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
 - Franking credits are most valuable for investors paying 0% tax (pension phase super, low-income earners) — they receive cash refunds
 - The 45-day holding period rule (90 days for preference shares) must be met for franking credit eligibility — ensure the client doesn't trade around ex-dividend dates
 - Small shareholder exemption (≤$5,000 total franking credits per FY) removes the holding period rule for most retail investors
@@ -137,4 +156,4 @@ For income-focused clients (especially retirees), model the annual income includ
 - Franking credit refunds are received after tax return lodgement, not when the dividend is paid — plan cash flow accordingly
 - Base rate entities (company tax rate 25%) generate lower franking credits per dollar of dividend than companies taxed at 30%
 - LICs can pay dividends from profit reserves in years when portfolio income is lower — this smoothing can be valuable for income-dependent retirees
-- All advice must comply with Best Interest Duty — recommending a portfolio concentrated in franking-heavy stocks may not be in the client's best interest if it creates undue risk
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics

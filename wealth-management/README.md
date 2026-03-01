@@ -1,6 +1,10 @@
 # Wealth Management Plugin (Australian)
 
-Wealth management tools for Australian financial advisers covering client reviews, financial planning, superannuation strategy, portfolio analysis, and client reporting. Adapted for Australian tax law, superannuation rules, Centrelink means testing, AFSL obligations, and ASIC regulatory requirements.
+Adviser working paper and paraplanning brief generator for Australian wealth management. Produces strategy analysis, calculations with full workings, and recommendation summaries that go to **paraplanning** for formal SOA/ROA documentation.
+
+**This plugin does not produce client-facing advice.** It produces internal adviser working papers — the analysis, calculations, and rationale that form the basis for paraplanning to draft compliant documentation. See [CONVENTIONS.md](CONVENTIONS.md) for the output format.
+
+Adapted for Australian tax law, superannuation rules, Centrelink means testing, AFSL obligations, and ASIC regulatory requirements.
 
 ## Features
 
@@ -20,18 +24,20 @@ Or copy to your project's `.claude-plugin/` directory.
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `/client-review [client]` | Prep for client review meetings |
-| `/client-report [client] [period]` | Generate professional performance reports |
-| `/financial-plan [client]` | Build or update comprehensive financial plans |
-| `/proposal [prospect]` | Create investment proposals for prospective clients |
-| `/rebalance [client]` | Analyse drift and generate rebalancing trades |
-| `/tlh [client]` | Identify capital loss harvesting opportunities |
-| `/super-strategy [client]` | Optimise superannuation contributions and strategy |
-| `/centrelink [client]` | Model Age Pension eligibility and optimise means testing |
-| `/franking [client]` | Analyse and optimise franking credit strategy |
-| `/debt-recycling [client]` | Model debt recycling strategy for mortgage holders |
+Each command produces a **paraplanning brief** — an adviser working paper with full calculation workings.
+
+| Command | Paraplanning Brief For |
+|---------|----------------------|
+| `/client-review [client]` | Client review meeting — performance, allocation, talking points |
+| `/client-report [client] [period]` | Performance report — returns, income, franking summaries |
+| `/financial-plan [client]` | Financial plan — super, retirement, Age Pension, debt recycling, estate |
+| `/proposal [prospect]` | Investment proposal — prospect analysis, strategy rationale |
+| `/rebalance [client]` | Portfolio rebalancing — drift analysis, tax-aware trades |
+| `/tlh [client]` | Capital loss harvesting — harvestable losses, Part IVA rationale |
+| `/super-strategy [client]` | Superannuation strategy — contributions, TTR, pension, TBC |
+| `/centrelink [client]` | Centrelink optimisation — means testing, asset structuring |
+| `/franking [client]` | Franking credit strategy — grossed-up yields, holding periods |
+| `/debt-recycling [client]` | Debt recycling — loan structure, projections, cost of carry |
 
 ## Skills
 
@@ -75,51 +81,58 @@ This plugin is adapted for Australian financial planning and covers:
 
 ## Example Workflows
 
-### Superannuation Strategy
-```
-/super-strategy Smith Family
+Each example produces an adviser working paper that goes to paraplanning — not a client-facing document.
 
-# Reviews:
-# - Contribution cap usage and carry-forward availability
-# - Salary sacrifice opportunity
-# - TTR strategy if approaching preservation age
-# - Insurance inside super review
-# - Pension phase transition planning
+### Financial Plan (with debt recycling)
 ```
+/financial-plan Smith Family
 
-### Centrelink Optimisation
-```
-/centrelink Jones Household
-
-# Calculates:
-# - Income test (deeming on financial assets)
-# - Assets test (homeowner thresholds)
-# - Estimated Age Pension entitlement
-# - Optimisation strategies (asset restructuring, gifting plan)
-```
-
-### Franking Credit Strategy
-```
-/franking Smith Family
-
-# Analyses:
-# - Franking credits across portfolio
-# - Grossed-up vs cash yields
-# - After-tax income at client's marginal rate
-# - Portfolio tilt recommendations
-# - Holding period rule compliance
+# Produces paraplanning brief with:
+# - Cash flow projections (FY-aligned, full workings)
+# - Super contribution modelling (SG + salary sacrifice + NCC)
+# - Retirement projection with Age Pension means testing
+# - Debt recycling assessment (if mortgage exists)
+# - Scenario comparison table
+# - Basis for advice (calculations supporting each recommendation)
+# - Paraplanning notes (product research, disclosures, gaps to resolve)
 ```
 
 ### Debt Recycling
 ```
 /debt-recycling Smith Family
 
-# Models:
-# - Loan structure (non-deductible vs deductible splits)
-# - Year-by-year debt composition shift
-# - Investment portfolio growth (franked AU equities)
-# - Tax savings from interest deductions
-# - Exit strategy at retirement
+# Produces paraplanning brief with:
+# - Suitability assessment
+# - Loan restructure specification (Split A / Split B)
+# - Year-by-year debt composition shift (every row calculable)
+# - After-tax cost of carry analysis (full workings)
+# - Franking credit integration at client's marginal rate
+# - Stress test results (rate rise, market crash, job loss)
+# - Exit strategy options with CGT modelling
+# - Basis for advice (legislative refs: TR 2000/2, s8-1 ITAA 1997)
+```
+
+### Superannuation Strategy
+```
+/super-strategy Smith Family
+
+# Produces paraplanning brief with:
+# - Contribution cap analysis and carry-forward availability
+# - Salary sacrifice modelling (tax saving workings)
+# - TTR strategy if approaching preservation age
+# - Pension phase transition and TBC tracking
+# - Insurance inside super review
+```
+
+### Centrelink Optimisation
+```
+/centrelink Jones Household
+
+# Produces paraplanning brief with:
+# - Income test calculation (deeming on financial assets)
+# - Assets test calculation (homeowner thresholds)
+# - Estimated Age Pension entitlement (full workings)
+# - Optimisation strategies with quantified pension increase
 ```
 
 ## Configuration

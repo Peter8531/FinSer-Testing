@@ -1,6 +1,6 @@
 # Investment Proposal
 
-description: Create professional investment proposals for prospective clients. Covers the firm's approach, proposed allocation, expected outcomes, fee structure, and regulatory requirements. Use when pitching new clients or presenting a new investment strategy. Triggers on "investment proposal", "prospect presentation", "pitch new client", "proposal for [client]", or "new client presentation".
+description: Produce an adviser working paper (paraplanning brief) for investment proposals for prospective clients. Covers the firm's approach, proposed allocation, expected outcomes, fee structure, and regulatory requirements. Use when pitching new clients or presenting a new investment strategy. Output goes to paraplanning for formal SOA/ROA drafting. Triggers on "investment proposal", "prospect presentation", "pitch new client", "proposal for [client]", or "new client presentation".
 
 ## Workflow
 
@@ -86,14 +86,45 @@ Proposed allocation:
 - For retirees, lead with income security, Age Pension optimisation, and estate planning
 - For business owners, address business succession, super catch-up contributions, and trust structures
 
-### Step 4: Output
+### Step 4: Output — Paraplanning Brief
 
-- PowerPoint presentation (12-15 slides) with firm branding
+This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+
+**1. Client Facts & Assumptions**
+- Prospect name, household details, current situation
+- Estimated total wealth, account types, current holdings
+- Super details (fund names, balances, insurance, investment options)
+- Goals, risk profile, constraints, fee sensitivity
+
+**2. Strategy Analysis & Calculations**
+- Proposed asset allocation with vehicle selection and rationale
+- Projected growth scenarios (conservative, moderate, optimistic)
+- Monte Carlo probability of meeting goals
+- Retirement income projections (super pension + Age Pension if eligible)
+- Risk metrics (max drawdown, volatility)
+- Comparison to current portfolio/super fund (if known)
+- Franking credit income projections (for income-focused clients)
+
+**3. Recommendations Summary**
+- Recommended investment strategy mapped to goals and risk profile
+- Super strategy (fund/platform, investment option, contribution strategy)
+- Tax-aware approach (franking credits, CGT discount timing, asset location)
+- Fee structure: advisory fees, platform fees, fund MERs, total all-in cost
+
+**4. Basis for Advice**
+- How the proposed strategy addresses the prospect's specific goals and concerns
+- Why this approach over alternatives (industry super, self-directed, other advisers)
+- Getting started plan: SOA process, account opening, super rollover, transition plan, first 90 days
+
+**5. Paraplanning Notes**
+- PowerPoint presentation (12-15 slides) with firm branding for paraplanning to finalise
 - PDF leave-behind version
 - One-page summary for follow-up email
+- Flag any areas requiring compliance review before presenting to prospect
 
 ## Important Notes
 
+- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
 - The proposal should feel personalised, not templated — reference their specific situation
 - Don't oversell performance — set realistic expectations and emphasise process and planning value
 - Always include disclaimers (projections are hypothetical, past performance does not indicate future performance)

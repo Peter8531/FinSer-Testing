@@ -1,6 +1,6 @@
 # Centrelink Optimisation
 
-description: Model Age Pension eligibility and optimise asset structuring to maximise Centrelink entitlements. Covers income test, assets test, deeming rates, gifting rules, and the interaction between super, investments, and pension eligibility. Triggers on "centrelink", "age pension", "means testing", "deeming rates", "pension eligibility", "assets test", or "income test".
+description: Produce an adviser working paper (paraplanning brief) for modelling Age Pension eligibility and optimising asset structuring to maximise Centrelink entitlements. Covers income test, assets test, deeming rates, gifting rules, and the interaction between super, investments, and pension eligibility. Output goes to paraplanning for formal SOA/ROA drafting. Triggers on "centrelink", "age pension", "means testing", "deeming rates", "pension eligibility", "assets test", or "income test".
 
 ## Workflow
 
@@ -172,18 +172,38 @@ The **more restrictive test** applies — whichever produces the lower pension a
 | After gifting strategy (5-year plan) | | | | | | |
 | Spouse super in accumulation | | | | | | |
 
-### Step 8: Output
+### Step 8: Output — Paraplanning Brief
 
+This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+
+**1. Client Facts & Assumptions**
+- Client age, residency status, homeowner/non-homeowner classification
+- Asset inventory (assessable and exempt) with valuations and ownership
+- Income sources (financial and non-financial)
+
+**2. Strategy Analysis & Calculations**
 - Means test assessment (income test and assets test calculations)
+- Scenario comparison table (current structure vs optimised alternatives)
+- Gifting plan modelling (if applicable, with 5-year tracking)
+
+**3. Recommendations Summary**
 - Estimated Age Pension entitlement (full, part, or nil)
 - Optimisation recommendations with projected pension increase
-- Gifting plan (if applicable, with 5-year tracking)
-- Scenario comparison table
 - Pensioner Concession Card benefits estimate
 - Action items and timing
 
+**4. Basis for Advice**
+- Rationale for each optimisation strategy (asset restructuring, super structuring, gifting, income stream selection)
+- Trade-offs considered (investment returns, flexibility, estate planning impacts)
+
+**5. Paraplanning Notes**
+- Thresholds and rates used (confirm current as at advice date)
+- Items requiring further verification with Services Australia
+- Any assumptions that need client confirmation before SOA/ROA drafting
+
 ## Important Notes
 
+- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
 - Thresholds and rates are indexed and change on 20 March and 20 September each year — always use current figures
 - Deeming rates are set by the government and can change — current rates (0.25% / 2.25%) are historically low
 - The Pensioner Concession Card alone can be worth thousands per year — even $1/fortnight of pension is worth claiming
@@ -192,6 +212,6 @@ The **more restrictive test** applies — whichever produces the lower pension a
 - Gifting more than allowed limits is still assessed for 5 years — plan ahead
 - Centrelink can request a review at any time — ensure all strategies are genuine and documented
 - Work Test exemption: from age 67-74, contributions may require meeting the work test (40 hours in 30 consecutive days) unless using the work test exemption (balance <$300,000, first year after ceasing work)
-- All advice relating to Centrelink optimisation must comply with Best Interest Duty and be documented in an SOA
+- The adviser and paraplanner ensure the final SOA/ROA meets Best Interest Duty (s961B) and FASEA Code of Ethics
 - Refer to Services Australia (Centrelink) for current threshold amounts — rates change regularly
 - Consider the whole picture: optimising for Age Pension eligibility may involve trade-offs (lower investment returns, reduced flexibility, estate planning impacts)

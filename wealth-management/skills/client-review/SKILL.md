@@ -1,6 +1,6 @@
 # Client Review Prep
 
-description: Prepare for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items. Pulls together account data into a concise meeting-ready format. Use before annual reviews, ongoing fee arrangement renewals, or ad-hoc client meetings. Triggers on "client review", "meeting prep for [client]", "annual review", "prep for [client name]", or "client meeting".
+description: Produce an adviser working paper (paraplanning brief) for client review meetings with portfolio performance summary, allocation analysis, talking points, and action items. Pulls together account data into a concise meeting-ready format. Use before annual reviews, ongoing fee arrangement renewals, or ad-hoc client meetings. Output goes to paraplanning for formal SOA/ROA drafting. Triggers on "client review", "meeting prep for [client]", "annual review", "prep for [client name]", or "client meeting".
 
 ## Workflow
 
@@ -86,17 +86,37 @@ Based on the review, suggest:
 - Aged care planning (if relevant — RAD, DAP, means-tested fees)
 - Ongoing Fee Arrangement renewal (if due)
 
-### Step 6: Output
+### Step 6: Output — Paraplanning Brief
 
-- One-page client review summary (Word or PDF)
+This output is an **adviser working paper** — it goes to paraplanning, not to the client. See [CONVENTIONS.md](../../CONVENTIONS.md) for the standard format.
+
+**1. Client Facts & Assumptions**
+- Client name, household members, account types, total assets
+- Risk profile, life stage, last review date, outstanding action items
+- Ongoing Fee Arrangement (OFA) renewal date
+
+**2. Strategy Analysis & Calculations**
 - Performance table with benchmarks (YTD aligned to financial year July-June)
-- Allocation chart (current vs. target)
+- Allocation chart (current vs. target) with drift analysis
+- Performance attribution (top contributors/detractors, franking credits)
+
+**3. Recommendations Summary**
 - Recommended action items with responsible party and dates
-- Meeting agenda
+- Rebalancing trades, contribution strategy changes, insurance review items
+- Meeting agenda and talking points
+
+**4. Basis for Advice**
+- Rationale linking each recommendation to client goals, risk profile, and current circumstances
 - Record of Advice (ROA) if recommendations are provided and client circumstances haven't significantly changed (otherwise full SOA required)
+
+**5. Paraplanning Notes**
+- One-page client review summary (Word or PDF) for paraplanning to expand into formal SOA/ROA
+- Flag any areas requiring further research or compliance review
+- Key dates: next review, OFA renewal, BDBN expiry
 
 ## Important Notes
 
+- **This output is an adviser working paper for paraplanning — it is not a client-facing document.** Paraplanning drafts the formal SOA/ROA from this brief
 - Know your client before the meeting — review notes from last meeting and any life changes
 - Lead with what the client cares about, not what you want to talk about
 - If performance was poor, address it directly — don't hide or spin

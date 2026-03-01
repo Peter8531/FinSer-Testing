@@ -46,5 +46,8 @@ TASKS.md
 MEMORY.md
 .claude/worktrees/
 
-# Generated output
-*/output/
+# Generated output (track sample outputs, ignore user-generated ones)
+*/output/*
+!*/output/.gitkeep
+!wealth-management/output/billie-strategy-request.md
+!wealth-management/output/strategy-request.docx

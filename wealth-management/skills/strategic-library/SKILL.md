@@ -80,6 +80,9 @@ Express liquidity as a floor (e.g., $50,000 minimum) and show the contribution f
 ### Partial Rollover for Insurance Continuity
 If insurance is under review or referral is pending, specify partial rollover to the new platform with cash left in the legacy fund (e.g., $10,000) to maintain cover until review completes. State the cash amount and its purpose.
 
+### Default Assumptions
+When the adviser provides a salary figure, treat it as ex-super (excluding superannuation guarantee) unless explicitly stated otherwise. When cash reserves are not specified, default to approximately 3 months of expenditure (annual expenses / 4, rounded to nearest $1,000).
+
 ### Mandatory Information Gathering
 Before running any calculations, confirm critical inputs are available. If missing, ask the adviser rather than estimating. Critical inputs include: total superannuation balance (TSB) per member (as at prior 30 June), carry-forward concessional cap (verified via ATO portal), recent NCC and bring-forward status, current FY contributions to date. These determine eligibility for contribution strategies and must be verified, not assumed. See CONVENTIONS.md for the full list.
 

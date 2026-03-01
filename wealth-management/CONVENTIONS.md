@@ -95,6 +95,11 @@ These rules apply to all output. No exceptions.
 
 These rules apply across all SOA Summary Requests. They are derived from case experience and must be checked on every engagement.
 
+### Default Assumptions
+These defaults apply unless the adviser states otherwise:
+- **Salary is always ex-super.** When the adviser provides a salary figure, treat it as excluding superannuation guarantee. Do not ask for clarification on this point.
+- **Cash reserves default to approximately 3 months of expenditure** unless the adviser specifies a different liquidity floor. Calculate as: annual expenses / 4, rounded to the nearest $1,000.
+
 ### Mandatory Information Gathering
 Before running any calculations, confirm the following critical inputs are available. If any are missing, **ask the adviser for them** rather than estimating or proceeding without them. All calculations must be fully worked from verified data.
 

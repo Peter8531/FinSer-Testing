@@ -66,7 +66,7 @@
 | 26 | Net salary (after tax and Medicare, estimated) | $12,847 per month ($154,168 p.a.) |
 | 27 | Monthly surplus (after car loan eliminated) | $4,629 per month ($55,548 p.a.) |
 | 28 | Liquidity floor | Approximately $15,000 (3 months expenses at $5,000 per month) |
-| 29 | Risk score / Selected profile | To be confirmed. CA-C (60/40) selected based on 3 to 5 year pre-retirement horizon |
+| 29 | Risk score / Selected profile | Confirmed. Profile C (Balanced). CA-C (60/40) selected based on 3 to 5 year pre-retirement horizon |
 | 30 | Investment return assumption (super, balanced) | 7% gross |
 | 31 | SMA | Akambo CA-C (Balanced Growth, 60/40 growth/defensive) |
 | 32 | Insurance handling | Referred to Akambo Insurance. Model premium drag only. IP currently inside Australian Super |
@@ -107,7 +107,7 @@ Downsizer contribution note: if the client sells or downsizes the $2,200,000 pro
 
 | | Notes |
 |---|-------|
-| 1 | Risk profile: to be confirmed. CA-C (60/40) selected based on 3 to 5 year pre-retirement horizon and existing defensive buffer outside super. Confirm risk profiling tool has been completed. If mismatch, document rationale per CONVENTIONS.md |
+| 1 | Risk profile: Confirmed as Profile C (Balanced). CA-C (60/40) selected based on 3 to 5 year pre-retirement horizon and existing defensive buffer outside super. Risk profiling tool completed. No mismatch |
 | 2 | Car loan interest rate: to be confirmed from loan statement. Assumed approximately 7% for comparison analysis. Update interest saving calculation if rate differs materially |
 | 3 | Insurance: referred to Akambo Insurance. Do not action rollover (Item 4) until insurance position confirmed. If cover needs to be maintained during transition, retain $10,000 in Australian Super for continuity |
 | 4 | TSB at prior 30 June: confirm exact figure from ATO portal. Value is confirmed above $500,000 (carry-forward not available) but exact figure needed for NCC eligibility check and projections |
@@ -135,3 +135,4 @@ Downsizer contribution note: if the client sells or downsizes the $2,200,000 pro
 | | Version | Date | Notes |
 |---|---------|------|-------|
 | 1 | v1 | 2026-03-01 | Initial Strategy Request |
+| 2 | v2 | 2026-03-01 | Risk profile confirmed as Profile C (Balanced). Updated risk score status from "To be confirmed" to confirmed across projection parameters and notes to AA |

@@ -68,6 +68,7 @@ Numbered rows. Each row is one discrete action item. Short, directive sentences.
 
 Rules:
 - Actions only. Assumptions and modelling parameters go to Projection Parameters.
+- **12-month scope.** The SOA can only form strategic recommendations for the period up to the next scheduled review (typically 12 months). All action items in this table must be implementable within that window. Multi-year strategies (e.g., a 3-year bracket-targeting plan) are noted here only for the current-year actions; the forward years go to Future Considerations (Step 10).
 - Do not ask the client to confirm sequencing. SOA comes first, implementation later.
 - Where platform selection is referenced, state that paraplanning will determine lowest total cost.
 - Where related-party loans are involved, note: handled by client's lawyer with accountant input.
@@ -177,13 +178,29 @@ Rules:
 - Flag any beneficiary/estate concerns (non-tax dependants, lapsing BDBNs).
 - Flag any insurance continuity requirements for rollovers.
 
-### Step 10: Change Log
+### Step 10: Future Considerations (File Note — Not for SOA)
+
+This section captures the multi-year strategic roadmap beyond the 12-month SOA scope. It is retained on file as a working note for the advice team. It is NOT included in the SOA document and is NOT a recommendation to the client. Its purpose is to give the advice team visibility of the original strategic intent so that future annual reviews can adopt, adapt, or discard these items based on changed circumstances.
+
+| | FY / Period | Consideration | Depends On |
+|---|------------|---------------|------------|
+| 1 | | | |
+| 2 | | | |
+
+Rules:
+- Each row is a forward-looking action or decision point that falls outside the current SOA window.
+- "Depends On" captures prerequisites or assumptions that must hold for the action to remain relevant (e.g., "carry-forward still available", "salary unchanged", "debt recycling facility established").
+- This is an internal planning tool. Do not present these as recommendations or promises to the client.
+- At each annual review, the advice team pulls this section forward: items that are now within scope move to the Summary of Advice; items no longer relevant are removed; new items are added.
+- Typical entries: future-year contribution tranches (bracket-targeting years 2-3), planned debt recycling phases, insurance review timing, estate planning referral follow-up, planned risk profile reassessment, target retirement transition date.
+
+### Step 11: Change Log
 
 | | Version | Date | Notes |
 |---|---------|------|-------|
 | 1 | v1 | [Today's date] | Initial Strategy Request |
 
-### Step 11: Output
+### Step 12: Output
 
 The assembled SOA Summary Request in full, formatted as clean tables ready to paste into CRM.
 

@@ -95,6 +95,9 @@ Where an action must occur after SOA acceptance (e.g., sell-down of an existing 
 ### Surplus Allocation
 Where surplus cashflow is directed to a Family Trust for investment, specify the allocation split (e.g., retain 20% in personal offset; 80% loaned to Family Trust). Note: loan documentation handled by client's lawyer with accountant input.
 
+### SOA Time Horizon — 12-Month Scope
+The Statement of Advice can only form strategic recommendations for the period up to the next scheduled review (typically 12 months). Multi-year strategies (e.g., a 3-year bracket-targeting contribution plan) must be split: current-year actions go into the Summary of Advice; forward-year actions go into Future Considerations (Step 10 of the Strategy Request). Future Considerations is a file note retained by the advice team — it is not included in the SOA and is not a recommendation to the client. At each annual review, the advice team pulls forward items that are now in scope, discards items that are no longer relevant, and adds new forward-looking items. This ensures the original strategic intent is preserved and visible without exceeding the SOA's permissible recommendation window.
+
 ### Pooled Trust vs Beneficial Ownership
 Industry super funds operate as pooled trusts. The client holds units in a commingled pool and has no control over the underlying assets. Key consequences: (1) no tax lot control — the fund decides which parcels to sell and when, so the client cannot manage CGT outcomes; (2) embedded capital gains are socialised across all unitholders — new members inherit existing gains and exiting members may crystallise gains they did not earn; (3) rebalancing and asset selection occur at fund level with no adviser visibility or input; (4) income distributions (including franking credit allocation) are determined at pool level, not per client. Platform SMA via Akambo provides beneficial ownership of assets in the client's (or super entity's) name. The adviser and Akambo control which parcels are sold and when, targeting specific tax lots for optimal CGT outcomes. Exposures are managed by specialists within the First Financial execution framework with full transparency and real-time reporting. This structural distinction supports the rollover recommendation wherever the client is moving from an industry fund to a platform SMA.
 
@@ -139,6 +142,7 @@ Thanks, [Your Name]
 | 4 | 2026-03-01 | Added First Financial Investment Execution Framework (4-stage process with governance and continuous risk management). Updated index funds dismissal to reference framework |
 | 5 | 2026-03-01 | Clarified Janus Group structure: Janus owns First Financial, Akambo (SMA), and Akambo Insurance (separate division) directly. Insurance is a referral to Akambo Insurance, not in-house |
 | 6 | 2026-03-01 | Added pooled trust vs beneficial ownership distinction as operational pattern and expanded industry fund product dismissal. Platform SMA provides beneficial ownership, tax lot control, and specialist-managed exposures vs pooled trust structure of industry funds |
+| 7 | 2026-03-01 | Added SOA time horizon rule (12-month scope). Multi-year roadmap captured as Future Considerations file note, not in SOA. Advice team pulls forward at annual reviews |
 
 ## Important Notes
 

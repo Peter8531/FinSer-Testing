@@ -1,7 +1,7 @@
 {
   "name": "wealth-management",
-  "version": "0.1.0",
-  "description": "Wealth management and financial advisory tools: client reviews, financial planning, portfolio analysis, and client reporting",
+  "version": "0.3.0-au",
+  "description": "SOA Summary Request generator for Australian wealth management. Produces strategy analysis with full calculation workings, then assembles CRM-ready Strategy Requests for associates and paraplanning to draft formal SOA/ROA documentation. Covers financial planning, superannuation, debt recycling, Centrelink, franking credits, portfolio management, and client reporting.",
   "author": {
     "name": "Anthropic FSI"
   }

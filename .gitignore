@@ -45,3 +45,9 @@ coverage/
 TASKS.md
 MEMORY.md
 .claude/worktrees/
+
+# Generated output (track sample outputs, ignore user-generated ones)
+*/output/*
+!*/output/.gitkeep
+!wealth-management/output/strategy-request.md
+!wealth-management/output/strategy-request.docx

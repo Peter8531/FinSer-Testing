@@ -1,0 +1,182 @@
+---
+# Wealth Management Plugin Settings (Australian)
+# Copy this file to .claude/wealth-management.local.md and customise
+
+# Your info
+name: "Peter Campbell"
+title: "Financial Adviser"
+practice: "Your Practice Name"
+afsl: "AFSL 000000"  # Or "Authorised Representative of [Licensee] AFSL 000000"
+ar_number: "AR 000000"  # If applicable
+qualifications: "CFP, B.Com"
+email_signature: |
+  Kind regards,
+  Peter Campbell
+  Financial Adviser | [Practice]
+  [Qualifications]
+  AFSL [Number]
+  [Phone]
+
+# Coverage focus
+client_types:
+  - "Pre-retirees"
+  - "Retirees"
+  - "Young professionals"
+  - "Business owners"
+  - "SMSF trustees"
+specialisations:
+  - "Retirement planning"
+  - "Superannuation strategy"
+  - "Debt recycling"
+  - "Centrelink optimisation"
+
+# Strategy Request preferences
+strategy_request:
+  # Liquidity / reserve
+  liquidity_floor: "$50,000"  # Minimum cash reserve unless otherwise stated
+
+  # Surplus allocation (where Family Trust is involved)
+  surplus_split:
+    personal_retain: "20%"
+    trust_loan: "80%"  # Subject to accountant confirmation
+    note: "80% loaned to Family Trust for investment"
+
+  # Risk profile
+  # No default mapping. Risk profile is determined per client based on their
+  # circumstances, risk tolerance, and investment timeframe. Where risk score
+  # does not match selected portfolio, include rationale in the Strategy Request.
+
+  # Stress test requirements
+  mandatory_stress_tests:
+    - "+3.0% interest rate stress test (modelling requirement)"
+
+  # Insurance scope
+  insurance_scope: "Out of scope by default. Model premium cashflow drag only. Referred to Akambo Insurance (separate division within Janus Group)."
+
+  # Platform preference
+  platform_note: "Paraplanning to determine lowest total cost. Default shortlist: Netwealth, HUB24."
+
+# Group structure
+# Janus Group owns each entity directly:
+#   - First Financial (advice)
+#   - Akambo (SMA / investment management)
+#   - Akambo Insurance (insurance product advice — separate division)
+# Shared licensee alignment through Janus Group ownership.
+partners:
+  akambo_sma: "Akambo"  # Janus Group entity. SMA provider (CA, MA, Collaborative)
+  akambo_insurance: "Akambo Insurance"  # Janus Group entity (separate division). Insurance product advice — referral
+  estate_planning: "Danaher Moulton"  # External referral
+  accountant: "[Accountant Name] @ [Firm]"  # External referral
+  mortgage_broker: "[Broker Name] @ [Firm]"  # External referral
+
+# Platforms used
+platforms:
+  - "Netwealth"
+  - "HUB24"
+
+# Investment philosophy — First Financial Execution Framework
+#
+# Four-stage process:
+#   1. Investment Philosophy: Dynamic portfolio management, high quality
+#      investments, risk management focus, diversification
+#   2. Asset Allocation: Driven by client objective, risk profile, and
+#      tactical overlay (not static strategic-only)
+#   3. Asset Selection: Quality filter. Universe includes direct assets,
+#      ETFs, and managed funds — selected through the SMA framework
+#   4. Implementation: Timely implementation, real-time management
+#
+# Governance: Investment Committee, Research, Monitoring, Review
+# Continuous: Risk management runs across all stages
+#
+# Janus Group owns First Financial and Akambo directly. Shared licensee
+# alignment through group ownership.
+#
+# All investment is via Akambo SMA (or Collaborative Model, which is
+# effectively SMA). Assume SMA for both inside and outside super unless
+# directed otherwise. Do not recommend index funds (VAS, IOZ, VGS, etc.)
+# as standalone client holdings — the SMA may use ETFs as building blocks
+# within the managed portfolio, but that is Akambo's decision, not ours.
+#
+# Two SMA types:
+#   CA (Circumstances and Attitude): designed to meet a specified drawdown
+#     requirement. Use for clients in or approaching drawdown phase.
+#   MA (Multi Asset): largely capital growth orientation. Use for clients
+#     in accumulation phase with long time horizon and no near-term drawdown.
+#
+# Default: MA for accumulation clients, CA for pre-retirement/retirement
+# clients with an income target. Adviser determines type based on client
+# circumstances.
+investment_philosophy:
+  framework: "First Financial Execution Framework"
+  stages:
+    philosophy: "Dynamic portfolio management, high quality investments, risk management focus, diversification"
+    asset_allocation: "Objective, Risk Profile, Tactical overlay"
+    asset_selection: "Quality filter. Direct assets, ETFs, managed funds — via SMA"
+    implementation: "Timely implementation, real-time management"
+  governance: "Investment Committee, Research, Monitoring, Review"
+  risk_management: "Continuous across all stages"
+  approach: "Akambo SMA (or Collaborative Model)"
+  no_index: true  # Do not recommend index funds as standalone holdings
+  sma_types:
+    ca: "Circumstances and Attitude. Designed to meet a drawdown requirement."
+    ma: "Multi Asset. Largely capital growth."
+  default_inside_super: "SMA"
+  default_outside_super: "SMA"
+  cash: "Term deposits, HISA, offset"
+
+# Active clients (for session reminders)
+active_clients:
+  - name: "Client A"
+    type: "Pre-retirement"
+    stage: "SOA Summary Request in progress"
+    accounts: "Super, Personal, Family Trust"
+
+# Default assumptions
+default_assumptions:
+  inflation_rate: "2.5%"
+  super_guarantee_rate: "12%"
+  concessional_cap: "$30,000"
+  non_concessional_cap: "$120,000"
+  transfer_balance_cap: "$1,900,000"
+  age_pension_age: 67
+  preservation_age: 60
+  financial_year: "1 July - 30 June"
+
+# Benchmarks
+default_benchmarks:
+  australian_equity: "S&P/ASX 200 Total Return"
+  international_equity: "MSCI World ex-AU (AUD)"
+  fixed_income: "Bloomberg AusBond Composite"
+  balanced: "50% ASX 200 TR / 30% MSCI World / 20% AusBond"
+
+# Fee structure
+fee_model: "Fixed fee"
+typical_fee_range: "$3,300 - $6,600 p.a."
+---
+
+# Notes
+
+## Partner and Referral Contacts
+- Akambo (SMA): Janus Group entity. SMA provider (CA, MA, Collaborative). Aligned on market views through group ownership
+- Akambo Insurance: Janus Group entity (separate division). Insurance product advice — referral within the group
+- Danaher Moulton: Estate Planning (wills, testamentary trusts, POA) — external referral
+- [Accountant Name] @ [Firm]: Trust structuring, loan documentation, tax returns — external referral
+- [Broker Name] @ [Firm]: Mortgage restructuring, debt recycling loan splits — external referral
+
+## Regulatory Updates
+| Date | Update | Impact |
+|------|--------|--------|
+| [Date] | [ASIC/ATO change] | [How it affects advice] |
+
+## Strategy Request Quality Checklist
+Before finalising any Strategy Request, verify:
+1. Tables paste cleanly to Word/CRM (no bullets/special characters)
+2. Summary is action-only (assumptions in Projection Parameters)
+3. Alternatives are adviser-considered and dismissed (not new strategies)
+4. Product Considerations are platform/product comparisons (not strategies)
+5. Notes list gap items to request from client
+6. Key numbers appear twice where helpful (annual and monthly)
+7. Carry-forward verified via ATO portal (not estimated)
+8. Source-of-Truth documented for all key inputs
+9. Risk profile mismatch disclosed if applicable
+10. Insurance continuity flagged for any super rollovers
